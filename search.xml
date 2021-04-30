@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>明日计划</title>
+    <url>/2021/04/23/%E6%98%8E%E6%97%A5%E8%AE%A1%E5%88%92/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="c3102df91eb224fc00f4e3acbacd2ac87eb9bae38cc0ef3da6c7153d7f8cc993">10d79030e8222445804370796b90fca106f15dd47c03b7cc3ac7fb0590359f37e6a220daaaea94a40edcb37bdd92e1249a461cb0edbb5848b6bbb308a98b5dcd1a1ce362beac1db5244eab23cfbf595e2057407469adf574f36b90a26b4ac8861812b5c48bd71c82eb42cd4a9578c2d7331bf1d99f23cca464135b13d0a6a692825104337aa4a77c62016b87f597b863488ec253deacd43cb9b9e5ee2ce12e940c717bdcbe6110a0326d8a6deb11a3afcd6a131dcddc82eeae24d1ed2a584409f99c1703a913cc759e7536e0f063bc673ff4a1beb842b6b92322f9126ee0108f9697e8643b3cf92d03c1be60cec6fd4c3f8b1a4bace7cc16dba74297e0d64f48d6c547402939f393351453bd543ac9a1a3e2d61e5dbfb38eb3f8cb20e35eda0a3ffdba5b5b2b30775c9f88bf5dba12f457ded8da13e6306d8ed9461ac47ef0fbd526293c1c0620a92c0295e7bbc6ec4399bc2b1003a0f3eb4053e50877981564fc4274222073435cc1d022db505f7f4d47f414a1912a6a2ade33fce52e3c55a6592f974140ad67c733de1f239f8d49a823dcf48d2fe94fbac05aa2d0704803666b1fede2696c6603ada7d01444de30b7930c8607cd62f522822d2fb4789973617818fb3ea100ae0ac5cc92f472d4f00ff674a8453180e803ff4fa1141dcbf6edda35f4f2ce54577f91e132da73888dd3d6ec52a07fc3153b9152828b8e02fce33384c1929216897749b01c6b6731617dd3a23eb7f48aca9d3abe2a35573a9935822b6ad21008bb50f0b81e9231f20df95a7f8dc9ad9e63667c77c7dde9a841a0a1f3df6bb64f438db2c1279b454648918a4c25b9459104b7d379354779f961aabc91a5f3797704f3ac41245d6cd93d1b840088f1cce3fe9ad5fc3ff31ca8314154b73178f04b41bde210e4dd2712c61b2cadc524f0b4038f6944a4be77eb229355d00b7e4b4be99d522354f45cab3447353b8173364127660a74f6927a464516528e26a00cd7592e9391265cd65e59bf4c06309fb49a4a53ad0e22c4237ce35cfce8cf68250108390a9cccc4846a70e2b225d3bd1dbad945c0de6c0f87763a2133e476110b447bc9f826484fb8507c9edfa069d1255e04f7323f1f56fdd909f00b41b49f3818a8aaadff6cf901d19438199c63b5d50d9d0bed999dcc7ef470ccfb9052a6b0c0de8c62735d6bd80772d45a6249fab796102cf893e5ae0f7c91914df71fa49610c69be3404c703f2520ab3b0d0a7ca32ddba7c3528079bde5de7cfa008a9e2466b44e6688be5997dd1e43eca269ba0a1ff67b2a1b185cecd73803a9fcfac74aa83373708cda340e8fce050c68da13ec104adc4cb8b01060d52f42f8a22a3c32054e25627c5de5c0600b864bede34a7f8b8677ab64dc824b1c0bd99841e5636d0b526c321434dabcf0ba9a74ea78fe8fe652eb7e0e84927e3104acf6c5361a8e5f943fa4715ec6a670c4af31ddaec9daa2263887c550c817ce235264687964caed02f918d684f2636f7dc8797f787a61decc2e37c37cdc28a26883bcb79851d203066f74a4e0c7889b2c72076cf0be637fb9cfbb373b3c7337552c35f469059e04917178e5cfdcf0f40e8a221e86a97e3d9b4e817c4222999a77ee3b420f3d613caa70e92540c09c28a6b0c17b765732817ff5d3cd88bc66f38dcc0678f0925b9e2b91d51a5b647a8aa36e</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>生活</category>
+        <category>备忘</category>
+      </categories>
+      <tags>
+        <tag>备忘</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>标签大全</title>
+    <url>/2021/04/29/%E6%A0%87%E7%AD%BE%E5%A4%A7%E5%85%A8/</url>
+    <content><![CDATA[]]></content>
+      <tags>
+        <tag>Mysql</tag>
+        <tag>Kafka</tag>
+        <tag>Linux</tag>
+        <tag>Docker</tag>
+        <tag>Composer</tag>
+        <tag>Redis</tag>
+        <tag>Git</tag>
+        <tag>Vue</tag>
+        <tag>Windows</tag>
+        <tag>Mac</tag>
+        <tag>PostMan</tag>
+        <tag>PHP</tag>
+        <tag>Vant</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>git常见问题记录</title>
+    <url>/2021/04/26/%E6%8A%80%E6%9C%AF/Git/git%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/</url>
+    <content><![CDATA[<h3 id="1、在-gitignore-文件中增加忽略文件不生效的解决办法"><a href="#1、在-gitignore-文件中增加忽略文件不生效的解决办法" class="headerlink" title="1、在 .gitignore 文件中增加忽略文件不生效的解决办法"></a>1、在 .gitignore 文件中增加忽略文件不生效的解决办法</h3><p>解决方法是先把本地缓存删除，然后重新加入再提交：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F; 从本地移除缓存</span><br><span class="line">git rm -rf --cached .</span><br><span class="line">&#x2F;&#x2F; 重新添加到本地</span><br><span class="line">git add .</span><br><span class="line">&#x2F;&#x2F; 提交到本地仓库</span><br><span class="line">git commit -m &#39;更新 .gitignore 文件&#39;</span><br></pre></td></tr></table></figure>
+
+<h3 id="2、Git报错解决：OpenSSL-SSL-read-Connection-was-reset-errno-10054"><a href="#2、Git报错解决：OpenSSL-SSL-read-Connection-was-reset-errno-10054" class="headerlink" title="2、Git报错解决：OpenSSL SSL_read: Connection was reset, errno 10054"></a>2、Git报错解决：OpenSSL SSL_read: Connection was reset, errno 10054</h3><p>首先，造成这个错误很有可能是网络不稳定，连接超时导致的，<br>如果再次尝试后依然报错，可以执行下面的命令<br><code>git config --global http.sslVerify &quot;false&quot;</code></p>
+<h3 id="3、warning-LF-will-be-replaced-by-CRLF-in-解决办法"><a href="#3、warning-LF-will-be-replaced-by-CRLF-in-解决办法" class="headerlink" title="3、warning: LF will be replaced by CRLF in 解决办法"></a>3、warning: LF will be replaced by CRLF in 解决办法</h3><p>在windows下面提交和linux提交的换行符不一样,windows中的换行符为 CRLF<br>而在linux下的换行符为LF，在windows下直接回车就会出现这个提示,修改的办法是把 core.autocrlf 设置成false</p>
+<p>解决办法：<br><code>git config --global core.autocrlf false</code></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+        <category>Git</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo站点建设之——WARN-No-layout-index-html</title>
+    <url>/2021/04/26/%E6%8A%80%E6%9C%AF/Hexo/Hexo%E7%AB%99%E7%82%B9%E5%BB%BA%E8%AE%BE%E4%B9%8B%E2%80%94%E2%80%94WARN-No-layout-index-html/</url>
+    <content><![CDATA[<h2 id="一-现象描述"><a href="#一-现象描述" class="headerlink" title="一 现象描述"></a>一 现象描述</h2><hr>
+<p>执行hexo g或hexo s时，可能会出现如下情况，<br><img src="https://img.imgdb.cn/item/60867779d1a9ae528fbb7107.png"></p>
+<h2 id="二-原因猜测"><a href="#二-原因猜测" class="headerlink" title="二 原因猜测"></a>二 原因猜测</h2><hr>
+<ul>
+<li>插件</li>
+<li>主题</li>
+<li>markdown文件</li>
+</ul>
+<h2 id="三-解决办法"><a href="#三-解决办法" class="headerlink" title="三 解决办法"></a>三 解决办法</h2><hr>
+<h3 id="3-1-插件"><a href="#3-1-插件" class="headerlink" title="3.1 插件"></a>3.1 插件</h3><h4 id="3-1-1-查看npm安装hexo插件的情况"><a href="#3-1-1-查看npm安装hexo插件的情况" class="headerlink" title="3.1.1 查看npm安装hexo插件的情况"></a>3.1.1 查看npm安装hexo插件的情况</h4><p><code>npm ls --depth 0</code><br><img src="https://img.imgdb.cn/item/60867779d1a9ae528fbb711e.png"></p>
+<h4 id="3-1-2-安装缺失的插件"><a href="#3-1-2-安装缺失的插件" class="headerlink" title="3.1.2 安装缺失的插件"></a>3.1.2 安装缺失的插件</h4><p><code>npm install acorn --save</code><br><img src="https://img.imgdb.cn/item/60867779d1a9ae528fbb70e2.png"></p>
+<h4 id="3-1-3-再次执行-npm-ls-–depth-0查看插件安装情况"><a href="#3-1-3-再次执行-npm-ls-–depth-0查看插件安装情况" class="headerlink" title="3.1.3 再次执行 npm ls –depth 0查看插件安装情况"></a>3.1.3 再次执行 npm ls –depth 0查看插件安装情况</h4><h3 id="3-2-主题-themes"><a href="#3-2-主题-themes" class="headerlink" title="3.2 主题(themes)"></a>3.2 主题(themes)</h3><hr>
+<h4 id="3-2-1-检查themes下的主题和配置"><a href="#3-2-1-检查themes下的主题和配置" class="headerlink" title="3.2.1 检查themes下的主题和配置"></a>3.2.1 检查themes下的主题和配置</h4><p><img src="https://img.imgdb.cn/item/60867779d1a9ae528fbb7158.png"></p>
+<h4 id="3-2-2-下载最新主题并配置-config-yml"><a href="#3-2-2-下载最新主题并配置-config-yml" class="headerlink" title="3.2.2 下载最新主题并配置_config.yml"></a>3.2.2 下载最新主题并配置_config.yml</h4><p><code>git clone https://github.com/theme-next/hexo-theme-next themes/next </code><br><img src="https://img.imgdb.cn/item/60867779d1a9ae528fbb7144.png"></p>
+<h4 id="3-2-3-执行hexo-g查看执行情况-文件能正常生成"><a href="#3-2-3-执行hexo-g查看执行情况-文件能正常生成" class="headerlink" title="3.2.3 执行hexo g查看执行情况(文件能正常生成)"></a>3.2.3 执行hexo g查看执行情况(文件能正常生成)</h4><p><img src="https://img.imgdb.cn/item/60867779d1a9ae528fbb7158.png"></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo站点建设之—如何将github站点布置到本地</title>
+    <url>/2021/04/26/%E6%8A%80%E6%9C%AF/Hexo/Hexo%E7%AB%99%E7%82%B9%E5%BB%BA%E8%AE%BE%E4%B9%8B%E2%80%94%E5%A6%82%E4%BD%95%E5%B0%86github%E7%AB%99%E7%82%B9%E5%B8%83%E7%BD%AE%E5%88%B0%E6%9C%AC%E5%9C%B0/</url>
+    <content><![CDATA[<h2 id="1、拷贝相关文件"><a href="#1、拷贝相关文件" class="headerlink" title="1、拷贝相关文件"></a>1、拷贝相关文件</h2><p><em>可以将下列文件提交到git，从git拉代码</em></p>
+<p>必须拷贝文件：<br>├──_config.yml<br>├── themes # 主题模板<br>├── scaffolds #文章模板<br>├── package.json #说明使用哪些包<br>├── .gitignore #限定在提交的时候哪些文件可以忽略<br>└── source  </p>
+<p>（1）讨论下哪些文件是必须拷贝的：首先是之前自己修改的文件，像站点配置_config.yml，theme文件夹里面的主题，以及source里面自己写的博客文件，这些肯定要拷贝的。除此之外，还有三个文件需要有，就是scaffolds文件夹（文章的模板）、package.json（说明使用哪些包）和.gitignore（限定在提交的时候哪些文件可以忽略）。其实，这三个文件不是我们修改的，所以即使丢失了，也没有关系，我们可以建立一个新的文件夹，然后在里面执行hexo init，就会生成这三个文件，我们只需要将它们拷贝过来使用即可。总结：_config.yml，theme/，source/，scaffolds/，package.json，.gitignore，是需要拷贝的。</p>
+<p>（2）再讨论下哪些文件是不必拷贝的，或者说可以删除的：首先是.git文件，无论是在站点根目录下，还是主题目录下的.git文件，都可以删掉。然后是文件夹node_modules（在用npm install会重新生成），public（这个在用hexo g时会重新生成），.deploy_git文件夹（在使用hexo d时也会重新生成），db.json文件。其实上面这些文件也就是是.gitignore文件里面记载的可以忽略的内容。总结：.git/，node_modules/，public/，.deploy_git/，db.json文件需要删除。</p>
+<h2 id="2、安装模块"><a href="#2、安装模块" class="headerlink" title="2、安装模块"></a>2、安装模块</h2><p>执行命令 <code>npm install</code><br>安装完会生成 <code>node_modules</code>文件夹  </p>
+<h2 id="3、生成文件并发布"><a href="#3、生成文件并发布" class="headerlink" title="3、生成文件并发布"></a>3、生成文件并发布</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo clean  </span><br><span class="line">hexo deploy  </span><br></pre></td></tr></table></figure>
+
+<p>引用参考<br><code>https://www.jianshu.com/p/906294181814</code><br><code>https://blog.csdn.net/qq_34187711/article/details/88592760</code></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo站点建设之—如何将本地项目发布到github</title>
+    <url>/2021/04/26/%E6%8A%80%E6%9C%AF/Hexo/Hexo%E7%AB%99%E7%82%B9%E5%BB%BA%E8%AE%BE%E4%B9%8B%E2%80%94%E5%A6%82%E4%BD%95%E5%B0%86%E6%9C%AC%E5%9C%B0%E9%A1%B9%E7%9B%AE%E5%8F%91%E5%B8%83%E5%88%B0github/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>技术</category>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo站点建设之—快速一个搭建Hexo博客</title>
+    <url>/2021/04/26/%E6%8A%80%E6%9C%AF/Hexo/Hexo%E7%AB%99%E7%82%B9%E5%BB%BA%E8%AE%BE%E4%B9%8B%E2%80%94%E5%BF%AB%E9%80%9F%E4%B8%80%E4%B8%AA%E6%90%AD%E5%BB%BAHexo%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>技术</category>
+        <category>Hexo</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>如何优雅地使用 Stack Overflow？</title>
+    <url>/2021/04/29/%E6%8A%80%E6%9C%AF/%E6%9C%AA%E5%88%86%E7%B1%BB/%E5%A6%82%E4%BD%95%E4%BC%98%E9%9B%85%E5%9C%B0%E4%BD%BF%E7%94%A8-Stack-Overflow%EF%BC%9F/</url>
+    <content><![CDATA[<p>一，提问前一定要搜索，先在 Google 搜索，然后在 StackOverFlow 上搜索，当实在找不到答案后再提问。    </p>
+<p>二，学习一些典型的提问/回答习惯。</p>
+<p><strong>提问：</strong></p>
+<p>1，In my limited experience with ..    谦虚表达自己在某方面的经验</p>
+<p>2，I am searching for a long time on net. But no use. Please help or try to give some ideas how to achieve this.   找了很久未果，求助攻</p>
+<p>3，after searching around for a decent XX solution and found that everything out there was difficult to use.  找了N种方法都发现太TM难了。</p>
+<p>4，I’ve looked around and apparently I’ve got the choice between these libraries/ solutions:   说明自己是努力搜索过的，然后目前有了哪几种方案</p>
+<p>5，which seems it’s a promising solution.  看起来是一个好解决方案</p>
+<p>6，I’ve tried multiple variations of this, but none of them seem to work. Any ideas? 试了很多种方法都无效，求助</p>
+<p>7，Wanted to know if it’s good practice to do that and what would be the best way to do that? 我的做法是否正确，是否有更好的法子？</p>
+<p>8，Thanks in advance.   先行谢过</p>
+<p><strong>回答问题：</strong></p>
+<p>1，If I understand you correctly, you want to xxx      如果我没理解错，你想。。</p>
+<p>2，Can you provided more details about your use case ? Can you provide more xml and code setting the url ? 提供更详细</p>
+<hr>
+<p>当别人回答你的问题后，你对回答的评论：</p>
+<p>1，thank you for your answer sincerely 感谢回答</p>
+<p>最后附上一篇好文：<a href="https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md">《提问的智慧》</a></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+        <category>未分类</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>技术文章收藏</title>
+    <url>/2021/04/28/%E6%8A%80%E6%9C%AF/%E6%9C%AA%E5%88%86%E7%B1%BB/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0%E6%94%B6%E8%97%8F/</url>
+    <content><![CDATA[<p><a href="https://www.cnblogs.com/jianguo221/p/11487532.html">windows安装npm和vue教程</a></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+        <category>未分类</category>
+      </categories>
+  </entry>
+</search>
