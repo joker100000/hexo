@@ -101,21 +101,21 @@
   
     <div class="article-entry" itemprop="articleBody">
        
-  <h2 id="一-现象描述"><a href="#一-现象描述" class="headerlink" title="一 现象描述"></a>一 现象描述</h2><hr>
+  <h2><span id="一-现象描述">一 现象描述</span></h2><hr>
 <p>执行hexo g或hexo s时，可能会出现如下情况，<br><img src="https://img.imgdb.cn/item/60867779d1a9ae528fbb7107.png"></p>
-<h2 id="二-原因猜测"><a href="#二-原因猜测" class="headerlink" title="二 原因猜测"></a>二 原因猜测</h2><hr>
+<h2><span id="二-原因猜测">二 原因猜测</span></h2><hr>
 <ul>
 <li>插件</li>
 <li>主题</li>
 <li>markdown文件</li>
 </ul>
-<h2 id="三-解决办法"><a href="#三-解决办法" class="headerlink" title="三 解决办法"></a>三 解决办法</h2><hr>
-<h3 id="3-1-插件"><a href="#3-1-插件" class="headerlink" title="3.1 插件"></a>3.1 插件</h3><h4 id="3-1-1-查看npm安装hexo插件的情况"><a href="#3-1-1-查看npm安装hexo插件的情况" class="headerlink" title="3.1.1 查看npm安装hexo插件的情况"></a>3.1.1 查看npm安装hexo插件的情况</h4><p><code>npm ls --depth 0</code><br><img src="https://img.imgdb.cn/item/60867779d1a9ae528fbb711e.png"></p>
-<h4 id="3-1-2-安装缺失的插件"><a href="#3-1-2-安装缺失的插件" class="headerlink" title="3.1.2 安装缺失的插件"></a>3.1.2 安装缺失的插件</h4><p><code>npm install acorn --save</code><br><img src="https://img.imgdb.cn/item/60867779d1a9ae528fbb70e2.png"></p>
-<h4 id="3-1-3-再次执行-npm-ls-–depth-0查看插件安装情况"><a href="#3-1-3-再次执行-npm-ls-–depth-0查看插件安装情况" class="headerlink" title="3.1.3 再次执行 npm ls –depth 0查看插件安装情况"></a>3.1.3 再次执行 npm ls –depth 0查看插件安装情况</h4><h3 id="3-2-主题-themes"><a href="#3-2-主题-themes" class="headerlink" title="3.2 主题(themes)"></a>3.2 主题(themes)</h3><hr>
-<h4 id="3-2-1-检查themes下的主题和配置"><a href="#3-2-1-检查themes下的主题和配置" class="headerlink" title="3.2.1 检查themes下的主题和配置"></a>3.2.1 检查themes下的主题和配置</h4><p><img src="https://img.imgdb.cn/item/60867779d1a9ae528fbb7158.png"></p>
-<h4 id="3-2-2-下载最新主题并配置-config-yml"><a href="#3-2-2-下载最新主题并配置-config-yml" class="headerlink" title="3.2.2 下载最新主题并配置_config.yml"></a>3.2.2 下载最新主题并配置_config.yml</h4><p><code>git clone https://github.com/theme-next/hexo-theme-next themes/next </code><br><img src="https://img.imgdb.cn/item/60867779d1a9ae528fbb7144.png"></p>
-<h4 id="3-2-3-执行hexo-g查看执行情况-文件能正常生成"><a href="#3-2-3-执行hexo-g查看执行情况-文件能正常生成" class="headerlink" title="3.2.3 执行hexo g查看执行情况(文件能正常生成)"></a>3.2.3 执行hexo g查看执行情况(文件能正常生成)</h4><p><img src="https://img.imgdb.cn/item/60867779d1a9ae528fbb7158.png"></p>
+<h2><span id="三-解决办法">三 解决办法</span></h2><hr>
+<h3><span id="31-插件">3.1 插件</span></h3><h4><span id="311-查看npm安装hexo插件的情况">3.1.1 查看npm安装hexo插件的情况</span></h4><p><code>npm ls --depth 0</code><br><img src="https://img.imgdb.cn/item/60867779d1a9ae528fbb711e.png"></p>
+<h4><span id="312-安装缺失的插件">3.1.2 安装缺失的插件</span></h4><p><code>npm install acorn --save</code><br><img src="https://img.imgdb.cn/item/60867779d1a9ae528fbb70e2.png"></p>
+<h4><span id="313-再次执行-npm-ls-depth-0查看插件安装情况">3.1.3 再次执行 npm ls –depth 0查看插件安装情况</span></h4><h3><span id="32-主题themes">3.2 主题(themes)</span></h3><hr>
+<h4><span id="321-检查themes下的主题和配置">3.2.1 检查themes下的主题和配置</span></h4><p><img src="https://img.imgdb.cn/item/60867779d1a9ae528fbb7158.png"></p>
+<h4><span id="322-下载最新主题并配置_configyml">3.2.2 下载最新主题并配置_config.yml</span></h4><p><code>git clone https://github.com/theme-next/hexo-theme-next themes/next </code><br><img src="https://img.imgdb.cn/item/60867779d1a9ae528fbb7144.png"></p>
+<h4><span id="323-执行hexo-g查看执行情况文件能正常生成">3.2.3 执行hexo g查看执行情况(文件能正常生成)</span></h4><p><img src="https://img.imgdb.cn/item/60867779d1a9ae528fbb7158.png"></p>
  
       <!-- reward -->
       
