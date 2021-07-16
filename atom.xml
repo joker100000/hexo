@@ -3,11 +3,11 @@
   <title>Joker Blog</title>
   
   <subtitle>Joker</subtitle>
-  <link href="https://joker100000.github.io/atom.xml" rel="self"/>
+  <link href="http://blog.joker10000.cn/atom.xml" rel="self"/>
   
-  <link href="https://joker100000.github.io/"/>
-  <updated>2021-04-30T06:32:02.462Z</updated>
-  <id>https://joker100000.github.io/</id>
+  <link href="http://blog.joker10000.cn/"/>
+  <updated>2021-05-24T09:18:56.214Z</updated>
+  <id>http://blog.joker10000.cn/</id>
   
   <author>
     <name>Yunlong.Liu</name>
@@ -17,9 +17,30 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>开发中常用英文单词</title>
+    <link href="http://blog.joker10000.cn/2021/05/24/%E5%BC%80%E5%8F%91%E4%B8%AD%E5%B8%B8%E7%94%A8%E8%8B%B1%E6%96%87%E5%8D%95%E8%AF%8D/"/>
+    <id>http://blog.joker10000.cn/2021/05/24/%E5%BC%80%E5%8F%91%E4%B8%AD%E5%B8%B8%E7%94%A8%E8%8B%B1%E6%96%87%E5%8D%95%E8%AF%8D/</id>
+    <published>2021-05-24T02:14:58.000Z</published>
+    <updated>2021-05-24T09:18:56.214Z</updated>
+    
+    <content type="html"><![CDATA[<h1><span id="商城">商城</span></h1><p>invoice    发票<br>tax    税<br>product/goods 商品<br>shop/store 店铺</p><h1><span id="文章">文章</span></h1><h1><span id="用户">用户</span></h1><p>mobile 手机<br>email  邮箱   uuuuuuuuuuuuuuu</p><h1><span id="公共">公共</span></h1><p>name   名称（姓名/公司名/商品名等）<br>status 状态 1-启用，0-未启用<br>type   类型 0-全部，1-类型A，类型B<br>创建时间<br>更新时间<br>是否删除  is_del 0-正常，1-删除</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1&gt;&lt;span id=&quot;商城&quot;&gt;商城&lt;/span&gt;&lt;/h1&gt;&lt;p&gt;invoice    发票&lt;br&gt;tax    税&lt;br&gt;product/goods 商品&lt;br&gt;shop/store 店铺&lt;/p&gt;
+&lt;h1&gt;&lt;span id=&quot;文章&quot;&gt;文章&lt;/span&gt;&lt;/h1&gt;&lt;h1&gt;&lt;s</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>如何优雅地使用 Stack Overflow？</title>
-    <link href="https://joker100000.github.io/2021/04/29/%E6%8A%80%E6%9C%AF/%E6%9C%AA%E5%88%86%E7%B1%BB/%E5%A6%82%E4%BD%95%E4%BC%98%E9%9B%85%E5%9C%B0%E4%BD%BF%E7%94%A8-Stack-Overflow%EF%BC%9F/"/>
-    <id>https://joker100000.github.io/2021/04/29/%E6%8A%80%E6%9C%AF/%E6%9C%AA%E5%88%86%E7%B1%BB/%E5%A6%82%E4%BD%95%E4%BC%98%E9%9B%85%E5%9C%B0%E4%BD%BF%E7%94%A8-Stack-Overflow%EF%BC%9F/</id>
+    <link href="http://blog.joker10000.cn/2021/04/29/%E6%8A%80%E6%9C%AF/%E6%9C%AA%E5%88%86%E7%B1%BB/%E5%A6%82%E4%BD%95%E4%BC%98%E9%9B%85%E5%9C%B0%E4%BD%BF%E7%94%A8-Stack-Overflow%EF%BC%9F/"/>
+    <id>http://blog.joker10000.cn/2021/04/29/%E6%8A%80%E6%9C%AF/%E6%9C%AA%E5%88%86%E7%B1%BB/%E5%A6%82%E4%BD%95%E4%BC%98%E9%9B%85%E5%9C%B0%E4%BD%BF%E7%94%A8-Stack-Overflow%EF%BC%9F/</id>
     <published>2021-04-29T06:50:48.000Z</published>
     <updated>2021-04-30T06:32:02.462Z</updated>
     
@@ -36,17 +57,17 @@
     
     
     
-    <category term="技术" scheme="https://joker100000.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    <category term="技术" scheme="http://blog.joker10000.cn/categories/%E6%8A%80%E6%9C%AF/"/>
     
-    <category term="未分类" scheme="https://joker100000.github.io/categories/%E6%8A%80%E6%9C%AF/%E6%9C%AA%E5%88%86%E7%B1%BB/"/>
+    <category term="未分类" scheme="http://blog.joker10000.cn/categories/%E6%8A%80%E6%9C%AF/%E6%9C%AA%E5%88%86%E7%B1%BB/"/>
     
     
   </entry>
   
   <entry>
     <title>标签大全</title>
-    <link href="https://joker100000.github.io/2021/04/29/%E6%A0%87%E7%AD%BE%E5%A4%A7%E5%85%A8/"/>
-    <id>https://joker100000.github.io/2021/04/29/%E6%A0%87%E7%AD%BE%E5%A4%A7%E5%85%A8/</id>
+    <link href="http://blog.joker10000.cn/2021/04/29/%E6%A0%87%E7%AD%BE%E5%A4%A7%E5%85%A8/"/>
+    <id>http://blog.joker10000.cn/2021/04/29/%E6%A0%87%E7%AD%BE%E5%A4%A7%E5%85%A8/</id>
     <published>2021-04-29T01:40:34.000Z</published>
     <updated>2021-04-30T06:31:45.161Z</updated>
     
@@ -54,38 +75,38 @@
     
     
     
-    <category term="Mysql" scheme="https://joker100000.github.io/tags/Mysql/"/>
+    <category term="Mysql" scheme="http://blog.joker10000.cn/tags/Mysql/"/>
     
-    <category term="Kafka" scheme="https://joker100000.github.io/tags/Kafka/"/>
+    <category term="Kafka" scheme="http://blog.joker10000.cn/tags/Kafka/"/>
     
-    <category term="Linux" scheme="https://joker100000.github.io/tags/Linux/"/>
+    <category term="Linux" scheme="http://blog.joker10000.cn/tags/Linux/"/>
     
-    <category term="Docker" scheme="https://joker100000.github.io/tags/Docker/"/>
+    <category term="Docker" scheme="http://blog.joker10000.cn/tags/Docker/"/>
     
-    <category term="Composer" scheme="https://joker100000.github.io/tags/Composer/"/>
+    <category term="Composer" scheme="http://blog.joker10000.cn/tags/Composer/"/>
     
-    <category term="Redis" scheme="https://joker100000.github.io/tags/Redis/"/>
+    <category term="Redis" scheme="http://blog.joker10000.cn/tags/Redis/"/>
     
-    <category term="Git" scheme="https://joker100000.github.io/tags/Git/"/>
+    <category term="Git" scheme="http://blog.joker10000.cn/tags/Git/"/>
     
-    <category term="Vue" scheme="https://joker100000.github.io/tags/Vue/"/>
+    <category term="Vue" scheme="http://blog.joker10000.cn/tags/Vue/"/>
     
-    <category term="Windows" scheme="https://joker100000.github.io/tags/Windows/"/>
+    <category term="Windows" scheme="http://blog.joker10000.cn/tags/Windows/"/>
     
-    <category term="Mac" scheme="https://joker100000.github.io/tags/Mac/"/>
+    <category term="Mac" scheme="http://blog.joker10000.cn/tags/Mac/"/>
     
-    <category term="PostMan" scheme="https://joker100000.github.io/tags/PostMan/"/>
+    <category term="PostMan" scheme="http://blog.joker10000.cn/tags/PostMan/"/>
     
-    <category term="PHP" scheme="https://joker100000.github.io/tags/PHP/"/>
+    <category term="PHP" scheme="http://blog.joker10000.cn/tags/PHP/"/>
     
-    <category term="Vant" scheme="https://joker100000.github.io/tags/Vant/"/>
+    <category term="Vant" scheme="http://blog.joker10000.cn/tags/Vant/"/>
     
   </entry>
   
   <entry>
     <title>技术文章收藏</title>
-    <link href="https://joker100000.github.io/2021/04/28/%E6%8A%80%E6%9C%AF/%E6%9C%AA%E5%88%86%E7%B1%BB/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0%E6%94%B6%E8%97%8F/"/>
-    <id>https://joker100000.github.io/2021/04/28/%E6%8A%80%E6%9C%AF/%E6%9C%AA%E5%88%86%E7%B1%BB/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0%E6%94%B6%E8%97%8F/</id>
+    <link href="http://blog.joker10000.cn/2021/04/28/%E6%8A%80%E6%9C%AF/%E6%9C%AA%E5%88%86%E7%B1%BB/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0%E6%94%B6%E8%97%8F/"/>
+    <id>http://blog.joker10000.cn/2021/04/28/%E6%8A%80%E6%9C%AF/%E6%9C%AA%E5%88%86%E7%B1%BB/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0%E6%94%B6%E8%97%8F/</id>
     <published>2021-04-28T09:39:04.000Z</published>
     <updated>2021-04-30T06:32:02.462Z</updated>
     
@@ -100,34 +121,34 @@
     
     
     
-    <category term="技术" scheme="https://joker100000.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    <category term="技术" scheme="http://blog.joker10000.cn/categories/%E6%8A%80%E6%9C%AF/"/>
     
-    <category term="未分类" scheme="https://joker100000.github.io/categories/%E6%8A%80%E6%9C%AF/%E6%9C%AA%E5%88%86%E7%B1%BB/"/>
+    <category term="未分类" scheme="http://blog.joker10000.cn/categories/%E6%8A%80%E6%9C%AF/%E6%9C%AA%E5%88%86%E7%B1%BB/"/>
     
     
   </entry>
   
   <entry>
     <title>Hexo站点建设之—快速一个搭建Hexo博客</title>
-    <link href="https://joker100000.github.io/2021/04/26/%E6%8A%80%E6%9C%AF/Hexo/Hexo%E7%AB%99%E7%82%B9%E5%BB%BA%E8%AE%BE%E4%B9%8B%E2%80%94%E5%BF%AB%E9%80%9F%E4%B8%80%E4%B8%AA%E6%90%AD%E5%BB%BAHexo%E5%8D%9A%E5%AE%A2/"/>
-    <id>https://joker100000.github.io/2021/04/26/%E6%8A%80%E6%9C%AF/Hexo/Hexo%E7%AB%99%E7%82%B9%E5%BB%BA%E8%AE%BE%E4%B9%8B%E2%80%94%E5%BF%AB%E9%80%9F%E4%B8%80%E4%B8%AA%E6%90%AD%E5%BB%BAHexo%E5%8D%9A%E5%AE%A2/</id>
+    <link href="http://blog.joker10000.cn/2021/04/26/%E6%8A%80%E6%9C%AF/Hexo/Hexo%E7%AB%99%E7%82%B9%E5%BB%BA%E8%AE%BE%E4%B9%8B%E2%80%94%E5%BF%AB%E9%80%9F%E4%B8%80%E4%B8%AA%E6%90%AD%E5%BB%BAHexo%E5%8D%9A%E5%AE%A2/"/>
+    <id>http://blog.joker10000.cn/2021/04/26/%E6%8A%80%E6%9C%AF/Hexo/Hexo%E7%AB%99%E7%82%B9%E5%BB%BA%E8%AE%BE%E4%B9%8B%E2%80%94%E5%BF%AB%E9%80%9F%E4%B8%80%E4%B8%AA%E6%90%AD%E5%BB%BAHexo%E5%8D%9A%E5%AE%A2/</id>
     <published>2021-04-26T09:16:49.000Z</published>
     <updated>2021-04-30T06:32:02.462Z</updated>
     
     
     
     
-    <category term="技术" scheme="https://joker100000.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    <category term="技术" scheme="http://blog.joker10000.cn/categories/%E6%8A%80%E6%9C%AF/"/>
     
-    <category term="Hexo" scheme="https://joker100000.github.io/categories/%E6%8A%80%E6%9C%AF/Hexo/"/>
+    <category term="Hexo" scheme="http://blog.joker10000.cn/categories/%E6%8A%80%E6%9C%AF/Hexo/"/>
     
     
   </entry>
   
   <entry>
     <title>Hexo站点建设之—如何将github站点布置到本地</title>
-    <link href="https://joker100000.github.io/2021/04/26/%E6%8A%80%E6%9C%AF/Hexo/Hexo%E7%AB%99%E7%82%B9%E5%BB%BA%E8%AE%BE%E4%B9%8B%E2%80%94%E5%A6%82%E4%BD%95%E5%B0%86github%E7%AB%99%E7%82%B9%E5%B8%83%E7%BD%AE%E5%88%B0%E6%9C%AC%E5%9C%B0/"/>
-    <id>https://joker100000.github.io/2021/04/26/%E6%8A%80%E6%9C%AF/Hexo/Hexo%E7%AB%99%E7%82%B9%E5%BB%BA%E8%AE%BE%E4%B9%8B%E2%80%94%E5%A6%82%E4%BD%95%E5%B0%86github%E7%AB%99%E7%82%B9%E5%B8%83%E7%BD%AE%E5%88%B0%E6%9C%AC%E5%9C%B0/</id>
+    <link href="http://blog.joker10000.cn/2021/04/26/%E6%8A%80%E6%9C%AF/Hexo/Hexo%E7%AB%99%E7%82%B9%E5%BB%BA%E8%AE%BE%E4%B9%8B%E2%80%94%E5%A6%82%E4%BD%95%E5%B0%86github%E7%AB%99%E7%82%B9%E5%B8%83%E7%BD%AE%E5%88%B0%E6%9C%AC%E5%9C%B0/"/>
+    <id>http://blog.joker10000.cn/2021/04/26/%E6%8A%80%E6%9C%AF/Hexo/Hexo%E7%AB%99%E7%82%B9%E5%BB%BA%E8%AE%BE%E4%B9%8B%E2%80%94%E5%A6%82%E4%BD%95%E5%B0%86github%E7%AB%99%E7%82%B9%E5%B8%83%E7%BD%AE%E5%88%B0%E6%9C%AC%E5%9C%B0/</id>
     <published>2021-04-26T08:49:59.000Z</published>
     <updated>2021-04-30T06:32:02.462Z</updated>
     
@@ -142,38 +163,38 @@
     
     
     
-    <category term="技术" scheme="https://joker100000.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    <category term="技术" scheme="http://blog.joker10000.cn/categories/%E6%8A%80%E6%9C%AF/"/>
     
-    <category term="Hexo" scheme="https://joker100000.github.io/categories/%E6%8A%80%E6%9C%AF/Hexo/"/>
+    <category term="Hexo" scheme="http://blog.joker10000.cn/categories/%E6%8A%80%E6%9C%AF/Hexo/"/>
     
     
-    <category term="hexo" scheme="https://joker100000.github.io/tags/hexo/"/>
+    <category term="hexo" scheme="http://blog.joker10000.cn/tags/hexo/"/>
     
   </entry>
   
   <entry>
     <title>Hexo站点建设之—如何将本地项目发布到github</title>
-    <link href="https://joker100000.github.io/2021/04/26/%E6%8A%80%E6%9C%AF/Hexo/Hexo%E7%AB%99%E7%82%B9%E5%BB%BA%E8%AE%BE%E4%B9%8B%E2%80%94%E5%A6%82%E4%BD%95%E5%B0%86%E6%9C%AC%E5%9C%B0%E9%A1%B9%E7%9B%AE%E5%8F%91%E5%B8%83%E5%88%B0github/"/>
-    <id>https://joker100000.github.io/2021/04/26/%E6%8A%80%E6%9C%AF/Hexo/Hexo%E7%AB%99%E7%82%B9%E5%BB%BA%E8%AE%BE%E4%B9%8B%E2%80%94%E5%A6%82%E4%BD%95%E5%B0%86%E6%9C%AC%E5%9C%B0%E9%A1%B9%E7%9B%AE%E5%8F%91%E5%B8%83%E5%88%B0github/</id>
+    <link href="http://blog.joker10000.cn/2021/04/26/%E6%8A%80%E6%9C%AF/Hexo/Hexo%E7%AB%99%E7%82%B9%E5%BB%BA%E8%AE%BE%E4%B9%8B%E2%80%94%E5%A6%82%E4%BD%95%E5%B0%86%E6%9C%AC%E5%9C%B0%E9%A1%B9%E7%9B%AE%E5%8F%91%E5%B8%83%E5%88%B0github/"/>
+    <id>http://blog.joker10000.cn/2021/04/26/%E6%8A%80%E6%9C%AF/Hexo/Hexo%E7%AB%99%E7%82%B9%E5%BB%BA%E8%AE%BE%E4%B9%8B%E2%80%94%E5%A6%82%E4%BD%95%E5%B0%86%E6%9C%AC%E5%9C%B0%E9%A1%B9%E7%9B%AE%E5%8F%91%E5%B8%83%E5%88%B0github/</id>
     <published>2021-04-26T08:49:04.000Z</published>
     <updated>2021-04-30T06:32:02.462Z</updated>
     
     
     
     
-    <category term="技术" scheme="https://joker100000.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    <category term="技术" scheme="http://blog.joker10000.cn/categories/%E6%8A%80%E6%9C%AF/"/>
     
-    <category term="Hexo" scheme="https://joker100000.github.io/categories/%E6%8A%80%E6%9C%AF/Hexo/"/>
+    <category term="Hexo" scheme="http://blog.joker10000.cn/categories/%E6%8A%80%E6%9C%AF/Hexo/"/>
     
     
-    <category term="hexo" scheme="https://joker100000.github.io/tags/hexo/"/>
+    <category term="hexo" scheme="http://blog.joker10000.cn/tags/hexo/"/>
     
   </entry>
   
   <entry>
     <title>Hexo站点建设之——WARN-No-layout-index-html</title>
-    <link href="https://joker100000.github.io/2021/04/26/%E6%8A%80%E6%9C%AF/Hexo/Hexo%E7%AB%99%E7%82%B9%E5%BB%BA%E8%AE%BE%E4%B9%8B%E2%80%94%E2%80%94WARN-No-layout-index-html/"/>
-    <id>https://joker100000.github.io/2021/04/26/%E6%8A%80%E6%9C%AF/Hexo/Hexo%E7%AB%99%E7%82%B9%E5%BB%BA%E8%AE%BE%E4%B9%8B%E2%80%94%E2%80%94WARN-No-layout-index-html/</id>
+    <link href="http://blog.joker10000.cn/2021/04/26/%E6%8A%80%E6%9C%AF/Hexo/Hexo%E7%AB%99%E7%82%B9%E5%BB%BA%E8%AE%BE%E4%B9%8B%E2%80%94%E2%80%94WARN-No-layout-index-html/"/>
+    <id>http://blog.joker10000.cn/2021/04/26/%E6%8A%80%E6%9C%AF/Hexo/Hexo%E7%AB%99%E7%82%B9%E5%BB%BA%E8%AE%BE%E4%B9%8B%E2%80%94%E2%80%94WARN-No-layout-index-html/</id>
     <published>2021-04-26T08:03:34.000Z</published>
     <updated>2021-04-30T06:31:45.161Z</updated>
     
@@ -188,19 +209,19 @@
     
     
     
-    <category term="技术" scheme="https://joker100000.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    <category term="技术" scheme="http://blog.joker10000.cn/categories/%E6%8A%80%E6%9C%AF/"/>
     
-    <category term="Hexo" scheme="https://joker100000.github.io/categories/%E6%8A%80%E6%9C%AF/Hexo/"/>
+    <category term="Hexo" scheme="http://blog.joker10000.cn/categories/%E6%8A%80%E6%9C%AF/Hexo/"/>
     
     
-    <category term="hexo" scheme="https://joker100000.github.io/tags/hexo/"/>
+    <category term="hexo" scheme="http://blog.joker10000.cn/tags/hexo/"/>
     
   </entry>
   
   <entry>
     <title>git常见问题记录</title>
-    <link href="https://joker100000.github.io/2021/04/26/%E6%8A%80%E6%9C%AF/Git/git%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/"/>
-    <id>https://joker100000.github.io/2021/04/26/%E6%8A%80%E6%9C%AF/Git/git%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/</id>
+    <link href="http://blog.joker10000.cn/2021/04/26/%E6%8A%80%E6%9C%AF/Git/git%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/"/>
+    <id>http://blog.joker10000.cn/2021/04/26/%E6%8A%80%E6%9C%AF/Git/git%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/</id>
     <published>2021-04-26T07:17:03.000Z</published>
     <updated>2021-04-30T06:32:02.462Z</updated>
     
@@ -215,19 +236,19 @@
     
     
     
-    <category term="技术" scheme="https://joker100000.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    <category term="技术" scheme="http://blog.joker10000.cn/categories/%E6%8A%80%E6%9C%AF/"/>
     
-    <category term="Git" scheme="https://joker100000.github.io/categories/%E6%8A%80%E6%9C%AF/Git/"/>
+    <category term="Git" scheme="http://blog.joker10000.cn/categories/%E6%8A%80%E6%9C%AF/Git/"/>
     
     
-    <category term="git" scheme="https://joker100000.github.io/tags/git/"/>
+    <category term="git" scheme="http://blog.joker10000.cn/tags/git/"/>
     
   </entry>
   
   <entry>
     <title>明日计划</title>
-    <link href="https://joker100000.github.io/2021/04/23/%E6%98%8E%E6%97%A5%E8%AE%A1%E5%88%92/"/>
-    <id>https://joker100000.github.io/2021/04/23/%E6%98%8E%E6%97%A5%E8%AE%A1%E5%88%92/</id>
+    <link href="http://blog.joker10000.cn/2021/04/23/%E6%98%8E%E6%97%A5%E8%AE%A1%E5%88%92/"/>
+    <id>http://blog.joker10000.cn/2021/04/23/%E6%98%8E%E6%97%A5%E8%AE%A1%E5%88%92/</id>
     <published>2021-04-23T07:49:16.000Z</published>
     <updated>2021-04-30T06:31:45.161Z</updated>
     
@@ -238,12 +259,12 @@
     
     
     
-    <category term="生活" scheme="https://joker100000.github.io/categories/%E7%94%9F%E6%B4%BB/"/>
+    <category term="生活" scheme="http://blog.joker10000.cn/categories/%E7%94%9F%E6%B4%BB/"/>
     
-    <category term="备忘" scheme="https://joker100000.github.io/categories/%E7%94%9F%E6%B4%BB/%E5%A4%87%E5%BF%98/"/>
+    <category term="备忘" scheme="http://blog.joker10000.cn/categories/%E7%94%9F%E6%B4%BB/%E5%A4%87%E5%BF%98/"/>
     
     
-    <category term="备忘" scheme="https://joker100000.github.io/tags/%E5%A4%87%E5%BF%98/"/>
+    <category term="备忘" scheme="http://blog.joker10000.cn/tags/%E5%A4%87%E5%BF%98/"/>
     
   </entry>
   
