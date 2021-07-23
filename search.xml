@@ -132,6 +132,9 @@
 <p>( 3000000 * 0.8 ) / (86400 * 0.2 ) = 139 (QPS)。</p>
 <p>一般需要达到139QPS，因为是峰值。</p>
 ]]></content>
+      <categories>
+        <category>一篇学会系列</category>
+      </categories>
   </entry>
   <entry>
     <title>Hexo站点建设之——WARN-No-layout-index-html</title>
@@ -154,7 +157,6 @@
 ]]></content>
       <categories>
         <category>技术</category>
-        <category>Hexo</category>
       </categories>
       <tags>
         <tag>hexo</tag>
@@ -174,7 +176,6 @@
 ]]></content>
       <categories>
         <category>技术</category>
-        <category>Hexo</category>
       </categories>
       <tags>
         <tag>hexo</tag>
@@ -186,7 +187,6 @@
     <content><![CDATA[]]></content>
       <categories>
         <category>技术</category>
-        <category>Hexo</category>
       </categories>
       <tags>
         <tag>hexo</tag>
@@ -198,7 +198,6 @@
     <content><![CDATA[]]></content>
       <categories>
         <category>技术</category>
-        <category>Hexo</category>
       </categories>
   </entry>
   <entry>
@@ -213,7 +212,6 @@
 ]]></content>
       <categories>
         <category>技术</category>
-        <category>Git</category>
       </categories>
       <tags>
         <tag>git</tag>
@@ -243,7 +241,6 @@
 ]]></content>
       <categories>
         <category>技术</category>
-        <category>未分类</category>
       </categories>
   </entry>
   <entry>
@@ -253,7 +250,6 @@
 ]]></content>
       <categories>
         <category>技术</category>
-        <category>未分类</category>
       </categories>
   </entry>
 </search>
