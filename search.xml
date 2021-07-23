@@ -52,26 +52,90 @@
       </tags>
   </entry>
   <entry>
-    <title>git常见问题记录</title>
-    <url>/2021/04/26/%E6%8A%80%E6%9C%AF/Git/git%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/</url>
-    <content><![CDATA[<h3><span id="1-在-gitignore-文件中增加忽略文件不生效的解决办法">1、在 .gitignore 文件中增加忽略文件不生效的解决办法</span></h3><p>解决方法是先把本地缓存删除，然后重新加入再提交：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F; 从本地移除缓存</span><br><span class="line">git rm -rf --cached .</span><br><span class="line">&#x2F;&#x2F; 重新添加到本地</span><br><span class="line">git add .</span><br><span class="line">&#x2F;&#x2F; 提交到本地仓库</span><br><span class="line">git commit -m &#39;更新 .gitignore 文件&#39;</span><br></pre></td></tr></table></figure>
+    <title>一篇学会Apache测试工具ab的使用</title>
+    <url>/2021/07/23/%E4%B8%80%E7%AF%87%E5%AD%A6%E4%BC%9A%E7%B3%BB%E5%88%97/%E4%B8%80%E7%AF%87%E5%AD%A6%E4%BC%9AApache%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7ab%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<h2><span id="为什么要做压测">为什么要做压测</span></h2><p>做为一名合格的后端工程师，在实现业务的同时，也要学会使用压测工具自己进行测试。现在大多数公司都采用前后端分离的方式，那么自己写的接口运行速度如何，QPS能达到多少，加入大并发的情况下，是否会出现因为并发导致的数据不一致问题，这是必须考虑的问题。</p>
+<h2><span id="apache的ab工具简介">Apache的ab工具简介</span></h2><p>Apache Bench，是 Apache 自带的压力测试工具，简称ab。</p>
+<p>ab的原理：ab命令会创建多个并发访问线程，模拟多个访问者同时对某一URL地址进行访问。它的测试目标是基于URL的，因此，它既可以用来测试apache的负载压力，也可以测试nginx、lighthttp、tomcat、IIS等其它Web服务器的压力。</p>
+<p>ab命令对发出负载的计算机要求很低，它既不会占用很高CPU，也不会占用很多内存。但却会给目标服务器造成巨大的负载，其原理类似CC攻击。自己测试使用也需要注意，否则一次上太多的负载。可能造成目标服务器资源耗完，严重时甚至导致死机。</p>
+<h2><span id="安装">安装</span></h2><p><strong>Linux</strong> </p>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line">yum -y install httpd-tools  <span class="comment">//centos</span></span><br><span class="line">apt-get install apache2-utils <span class="comment">//ubuntu</span></span><br><span class="line">ab -V #查看版本</span><br></pre></td></tr></table></figure>
 
-<h3><span id="2-git报错解决openssl-ssl_read-connection-was-reset-errno-10054">2、Git报错解决：OpenSSL SSL_read: Connection was reset, errno 10054</span></h3><p>首先，造成这个错误很有可能是网络不稳定，连接超时导致的，<br>如果再次尝试后依然报错，可以执行下面的命令<br><code>git config --global http.sslVerify &quot;false&quot;</code></p>
-<h3><span id="3-warning-lf-will-be-replaced-by-crlf-in-解决办法">3、warning: LF will be replaced by CRLF in 解决办法</span></h3><p>在windows下面提交和linux提交的换行符不一样,windows中的换行符为 CRLF<br>而在linux下的换行符为LF，在windows下直接回车就会出现这个提示,修改的办法是把 core.autocrlf 设置成false</p>
-<p>解决办法：<br><code>git config --global core.autocrlf false</code></p>
+<p>Window</p>
+<p>这里我就简单说下，首先下载Apache，安装后到服务中启用，然后进入到Apache的bin目录中，如我的安装目录在“D:\Apache24\bin”，进入后运行命令行。</p>
+<h2><span id="参数介绍">参数介绍</span></h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">D:\Apache24\bin&gt;ab</span><br><span class="line">ab: wrong number of arguments</span><br><span class="line">Usage: ab [options] [http://]hostname[:port]/path</span><br><span class="line">Options are:</span><br><span class="line">    -n requests     Number of requests to perform</span><br><span class="line">    -c concurrency  Number of multiple requests to make at a time</span><br><span class="line">    -t timelimit    Seconds to max. to spend on benchmarking</span><br><span class="line">                    This implies -n 50000</span><br><span class="line">    -s timeout      Seconds to max. wait for each response</span><br><span class="line">                    Default is 30 seconds</span><br><span class="line">    -b windowsize   Size of TCP send/receive buffer, in bytes</span><br><span class="line">    -B address      Address to bind to when making outgoing connections</span><br><span class="line">    -p postfile     File containing data to POST. Remember also to set -T</span><br><span class="line">    -u putfile      File containing data to PUT. Remember also to set -T</span><br><span class="line">    -T content-type Content-type header to use for POST/PUT data, eg.</span><br><span class="line">                    &#x27;application/x-www-form-urlencoded&#x27;</span><br><span class="line">                    Default is &#x27;text/plain&#x27;</span><br><span class="line">    -v verbosity    How much troubleshooting info to print</span><br><span class="line">    -w              Print out results in HTML tables</span><br><span class="line">    -i              Use HEAD instead of GET</span><br><span class="line">    -x attributes   String to insert as table attributes</span><br><span class="line">    -y attributes   String to insert as tr attributes</span><br><span class="line">    -z attributes   String to insert as td or th attributes</span><br><span class="line">    -C attribute    Add cookie, eg. &#x27;Apache=1234&#x27;. (repeatable)</span><br><span class="line">    -H attribute    Add Arbitrary header line, eg. &#x27;Accept-Encoding: gzip&#x27;</span><br><span class="line">                    Inserted after all normal header lines. (repeatable)</span><br><span class="line">    -A attribute    Add Basic WWW Authentication, the attributes</span><br><span class="line">                    are a colon separated username and password.</span><br><span class="line">    -P attribute    Add Basic Proxy Authentication, the attributes</span><br><span class="line">                    are a colon separated username and password.</span><br><span class="line">    -X proxy:port   Proxyserver and port number to use</span><br><span class="line">    -V              Print version number and exit</span><br><span class="line">    -k              Use HTTP KeepAlive feature</span><br><span class="line">    -d              Do not show percentiles served table.</span><br><span class="line">    -S              Do not show confidence estimators and warnings.</span><br><span class="line">    -q              Do not show progress when doing more than 150 requests</span><br><span class="line">    -l              Accept variable document length (use this for dynamic pages)</span><br><span class="line">    -g filename     Output collected data to gnuplot format file.</span><br><span class="line">    -e filename     Output CSV file with percentages served</span><br><span class="line">    -r              Don&#x27;t exit on socket receive errors.</span><br><span class="line">    -m method       Method name</span><br><span class="line">    -h              Display usage information (this message)</span><br></pre></td></tr></table></figure>
+
+
+
+<p>-n：请求的总数量，默认是一次</p>
+<p>-c：每次请求的数量。默认是一次一个。</p>
+<p>-t：测试所进行的最大秒数。默认没有时间限制。</p>
+<p>-p：包含了需要POST的数据的文件。</p>
+<p>-P：对一个中转代理提供BASIC认证信任。用户名和密码由一个:隔开，并以base64编码形式发送。无论服务器是否需要(即是否发送了401认证需求代码)，此字符串都会被发送。</p>
+<p>-T：POST数据所使用的Content-type头信息。</p>
+<p>-v：设置显示信息的详细程度-4或更大值会显示头信息，3或更大值可以显示响应代码(404,200等),2或更大值可以显示警告和其他信息。</p>
+<p>-V：显示版本号并退出。</p>
+<p>-w：以HTML表的格式输出结果。默认时，它是白色背景的两列宽度的一张表。</p>
+<p>-i：执行HEAD请求，而不是GET。</p>
+<p>-x：设置<table>属性的字符串。</table></p>
+<p>-X：对请求使用代理服务器。</p>
+<p>-y：设置<tr>属性的字符串。</tr></p>
+<p>-z：设置<td>属性的字符串。</td></p>
+<p>-C：对请求附加一个Cookie:行。其典型形式是name=value的一个参数对，此参数可以重复。</p>
+<p>-H：对请求附加额外的头信息。此参数的典型形式是一个有效的头信息行，其中包含了以冒号分隔的字段和值的对(如,”Accept-Encoding:zip/zop;8bit”)。</p>
+<p>-A：对服务器提供BASIC认证信任。用户名和密码由一个:隔开，并以base64编码形式发送。无论服务器是否需要(即,是否发送了401认证需求代码)，此字符串都会被发送。</p>
+<p>-h：显示使用方法。</p>
+<p>-d：不显示”percentage served within XX [ms] table”的消息(为以前的版本提供支持)。</p>
+<p>-e：产生一个以逗号分隔的(CSV)文件，其中包含了处理每个相应百分比的请求所需要(从1%到100%)的相应百分比的(以微妙为单位)时间。由于这种格式已经“二进制化”，所以比’gnuplot’格式更有用。</p>
+<p>-g：把所有测试结果写入一个’gnuplot’或者TSV(以Tab分隔的)文件。此文件可以方便地导入到Gnuplot,IDL,Mathematica,Igor甚至Excel中。其中的第一行为标题。</p>
+<p>-i：执行HEAD请求，而不是GET。</p>
+<p>-k：启用HTTP KeepAlive功能，即在一个HTTP会话中执行多个请求。默认时，不启用KeepAlive功能。</p>
+<p>-q：如果处理的请求数大于150，ab每处理大约10%或者100个请求时，会在stderr输出一个进度计数。此-q标记可以抑制这些信息。</p>
+<h2><span id="使用">使用</span></h2><p>ab的命令参数比较多，我们经常使用的是-c和-n参数。</p>
+<p><strong>简单举例：</strong></p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ab -n 1000 -c 10 http://test.mall-api.com/webapi/index/index?debug=1</span><br><span class="line">-n 100表示请求总数为1000</span><br><span class="line">-c 10表示并发用户数为10</span><br></pre></td></tr></table></figure>
+
+<p>总结起来就是此条命令模仿一共请求1000次，有10个用户同时访问的场景</p>
+<p>请求结果如下：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">D:\Apache24\bin&gt;ab -n 1000 -c 10 http://test.mall-api.com/webapi/index/index?debug=1</span><br><span class="line">This is ApacheBench, Version 2.3 &lt;$Revision: 1879490 $&gt;</span><br><span class="line">Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/</span><br><span class="line">Licensed to The Apache Software Foundation, http://www.apache.org/</span><br><span class="line"></span><br><span class="line">Benchmarking test.mall-api.com (be patient)</span><br><span class="line">Completed 100 requests</span><br><span class="line">Completed 200 requests</span><br><span class="line">Completed 300 requests</span><br><span class="line">Completed 400 requests</span><br><span class="line">Completed 500 requests</span><br><span class="line">Completed 600 requests</span><br><span class="line">Completed 700 requests</span><br><span class="line">Completed 800 requests</span><br><span class="line">Completed 900 requests</span><br><span class="line">Completed 1000 requests</span><br><span class="line">Finished 1000 requests</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">Server Software:        nginx	# Web服务器软件名称</span><br><span class="line">Server Hostname:        test.mall-api.com	# 请求的URL主机名</span><br><span class="line">Server Port:            80	# Web服务器软件的监听端口</span><br><span class="line"></span><br><span class="line">Document Path:          /webapi/index/index?debug=1	# 表示请求的URL中的根绝对路径</span><br><span class="line">Document Length:        26978 bytes	# 表示HTTP响应数据的正文长度</span><br><span class="line"></span><br><span class="line">Concurrency Level:      10	# 表示并发用户数</span><br><span class="line">Time taken for tests:   435.017 seconds	# 所有这些请求被处理完成所花费的总时间</span><br><span class="line">Complete requests:      1000 # 表示总请求数量</span><br><span class="line">Failed requests:        0	# 表示请求失败的数量</span><br><span class="line">Total transferred:      27583768 bytes	# 所有请求的响应数据长度总和</span><br><span class="line">HTML transferred:       26978000 bytes	# 所有请求的响应数据中正文数据的总和</span><br><span class="line">Requests per second:    2.30 [#/sec] (mean)	# 吞吐率，也叫QPS，计算公式：Complete requests/Time taken for tests</span><br><span class="line">Time per request:       4350.172 [ms] (mean)	# 用户平均请求等待时间，从用户角度看，完成一个请求所需要的时间。计算公式：Time token for tests/（Complete requests/Concurrency Level）</span><br><span class="line">Time per request:       435.017 [ms] (mean, across all concurrent requests)	# 服务器完成一个请求的时间，计算公式：Time taken for tests/Complete requests，正好是吞吐率的倒数。</span><br><span class="line">Transfer rate:          61.92 [Kbytes/sec] received</span><br><span class="line"></span><br><span class="line">Connection Times (ms)</span><br><span class="line">              min  mean[+/-sd] median   max</span><br><span class="line">Connect:        0    0   0.3      1       1</span><br><span class="line">Processing:  1083 4308 1191.9   4018   11842</span><br><span class="line">Waiting:     1083 4308 1191.9   4018   11842</span><br><span class="line">Total:       1083 4309 1191.9   4019   11843</span><br><span class="line">ERROR: The median and mean for the initial connection time are more than twice the standard</span><br><span class="line">       deviation apart. These results are NOT reliable.</span><br><span class="line"></span><br><span class="line">Percentage of the requests served within a certain time (ms)</span><br><span class="line"><span class="meta">  50%</span><span class="bash">   4019	<span class="comment"># 大约百分之50的请求在4秒返回</span></span></span><br><span class="line"><span class="meta">  66%</span><span class="bash">   4559</span></span><br><span class="line"><span class="meta">  75%</span><span class="bash">   4936</span></span><br><span class="line"><span class="meta">  80%</span><span class="bash">   5151</span></span><br><span class="line"><span class="meta">  90%</span><span class="bash">   5884</span></span><br><span class="line"><span class="meta">  95%</span><span class="bash">   6568</span></span><br><span class="line"><span class="meta">  98%</span><span class="bash">   7524</span></span><br><span class="line"><span class="meta">  99%</span><span class="bash">   8123	<span class="comment"># 大约百分之99的请求在8秒返回</span></span></span><br><span class="line"><span class="meta"> 100%</span><span class="bash">  11843 (longest request)</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>如果上面的说明觉得不够详细，也可以看下面的详细说明：</strong></p>
+<p>除此之外还有其他一些信息，需要说明下，如下：<br><strong>Server Software</strong>表示被测试的Web服务器软件名称。</p>
+<p><strong>Server Hostname</strong>表示请求的URL主机名。</p>
+<p><strong>Server Port</strong>表示被测试的Web服务器软件的监听端口。</p>
+<p><strong>Document Path</strong>表示请求的URL中的根绝对路径，通过该文件的后缀名，我们一般可以了解该请求的类型。</p>
+<p><strong>Document Length</strong>表示HTTP响应数据的正文长度。</p>
+<p><strong>Concurrency Level</strong>表示并发用户数，这是我们设置的参数之一。</p>
+<p><strong>Time taken for tests</strong>表示所有这些请求被处理完成所花费的总时间。</p>
+<p><strong>Complete requests</strong>表示总请求数量，这是我们设置的参数之一。</p>
+<p><strong>Failed requests</strong>表示失败的请求数量，这里的失败是指请求在连接服务器、发送数据等环节发生异常，以及无响应后超时的情况。如果接收到的HTTP响应数据的头信息中含有2XX以外的状态码，则会在测试结果中显示另一个名为“Non-2xx responses”的统计项，用于统计这部分请求数，这些请求并不算在失败的请求中。</p>
+<p><strong>Total transferred</strong>表示所有请求的响应数据长度总和，包括每个HTTP响应数据的头信息和正文数据的长度。注意这里不包括HTTP请求数据的长度，仅仅为web服务器流向用户PC的应用层数据总长度。</p>
+<p><strong>HTML transferred</strong>表示所有请求的响应数据中正文数据的总和，也就是减去了Total transferred中HTTP响应数据中的头信息的长度。</p>
+<p><strong>Requests per second</strong>吞吐率，也叫QPS，计算公式：Complete requests/Time taken for tests</p>
+<p><strong>Time per request</strong>用户平均请求等待时间，从用户角度看，完成一个请求所需要的时间。计算公式：Time token for tests/（Complete requests/Concurrency Level）。</p>
+<p>**Time per requet(across all concurrent request)**服务器完成一个请求的时间，计算公式：Time taken for tests/Complete requests，正好是吞吐率的倒数。<br>也可以这么统计：Time per request/Concurrency Level。</p>
+<p><strong>Transfer rate</strong>表示网络传输速度，计算公式：Total trnasferred/ Time taken for tests，这个统计很好的说明服务器的处理能力达到极限时，其出口宽带的需求量。</p>
+<p>对于大文件的请求测试，这个值很容易成为系统瓶颈所在。要确定该值是不是瓶颈，需要了解客户端和被测服务器之间的网络情况，包括网络带宽和网卡速度等信息。</p>
+<p><strong>Percentage of requests served within a certain time（ms）</strong><br>这部分数据用于描述每个请求处理时间的分布情况，比如以上测试，80%的请求处理时间都不超过5151ms，这个处理时间是指前面的Time per request，即对于单个用户而言，平均每个请求的处理时间。</p>
+<p>这个表第一行表示有50%的请求都是在5151ms内完成的，可以看到这个值是比较接近平均系统响应时间，以此类推。</p>
+<p><strong>Connection Times (ms)</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Connection Times (ms)</span><br><span class="line">              min  mean[+&#x2F;-sd] median   max</span><br><span class="line">Connect:        0    0   0.3      1       1</span><br><span class="line">Processing:  1083 4308 1191.9   4018   11842</span><br><span class="line">Waiting:     1083 4308 1191.9   4018   11842</span><br><span class="line">Total:       1083 4309 1191.9   4019   11843</span><br></pre></td></tr></table></figure>
+
+<p>这几行组成的表格主要是针对响应时间也就是第一个Time per request进行细分和统计。一个请求的响应时间可以分成网络链接（Connect），系统处理（Processing）和等待（Waiting）三个部分。表中min表示最小值； mean表示平均值；[+/-sd]表示标准差（Standard Deviation） ，也称均方差（mean square error），这个概念在中学的数学课上学过，表示数据的离散程度，数值越大表示数据越分散，系统响应时间越不稳定。 median表示中位数； max当然就是表示最大值了。</p>
+<p>需要注意的是表中的Total并不等于前三行数据相加，因为前三行的数据并不是在同一个请求中采集到的，可能某个请求的网络延迟最短，但是系统处理时间又是最长的呢。所以Total是从整个请求所需要的时间的角度来统计的。这里可以看到最慢的一个请求花费了11843ms(即100% 11843 (longest request))。</p>
+<p> <strong>另外如需压测https协议的地址，将ab换成abs即可</strong></p>
+<p><code>D:\Apache24\bin&gt;ab -n 1000 -c 10 http://test.mall-api.com/webapi/index/index?debug=1</code></p>
+<h2><span id="如何计算服务器的承受能力">如何计算服务器的承受能力</span></h2><p>原理：每天80%的访问集中在20%的时间里，这20%时间叫做峰值时间。 </p>
+<p>公式：( 总PV数 * 80% ) / ( 每天秒数 * 20% ) = 峰值时间每秒请求数(QPS) 。</p>
+<p>机器：峰值时间每秒QPS / 单台机器的QPS = 需要的机器 。</p>
+<p>每天300w PV 的在单台机器上，这台机器需要多少QPS？ </p>
+<p>( 3000000 * 0.8 ) / (86400 * 0.2 ) = 139 (QPS)。</p>
+<p>一般需要达到139QPS，因为是峰值。</p>
 ]]></content>
-      <categories>
-        <category>技术</category>
-        <category>Git</category>
-      </categories>
-      <tags>
-        <tag>git</tag>
-      </tags>
   </entry>
   <entry>
     <title>Hexo站点建设之——WARN-No-layout-index-html</title>
-    <url>/2021/04/26/%E6%8A%80%E6%9C%AF/Hexo/Hexo%E7%AB%99%E7%82%B9%E5%BB%BA%E8%AE%BE%E4%B9%8B%E2%80%94%E2%80%94WARN-No-layout-index-html/</url>
+    <url>/2021/04/26/%E6%8A%80%E6%9C%AF/Hexo%E7%AB%99%E7%82%B9%E5%BB%BA%E8%AE%BE%E4%B9%8B%E2%80%94%E2%80%94WARN-No-layout-index-html/</url>
     <content><![CDATA[<h2><span id="一-现象描述">一 现象描述</span></h2><hr>
 <p>执行hexo g或hexo s时，可能会出现如下情况，<br><img src="https://img.imgdb.cn/item/60867779d1a9ae528fbb7107.png"></p>
 <h2><span id="二-原因猜测">二 原因猜测</span></h2><hr>
@@ -98,7 +162,7 @@
   </entry>
   <entry>
     <title>Hexo站点建设之—如何将github站点布置到本地</title>
-    <url>/2021/04/26/%E6%8A%80%E6%9C%AF/Hexo/Hexo%E7%AB%99%E7%82%B9%E5%BB%BA%E8%AE%BE%E4%B9%8B%E2%80%94%E5%A6%82%E4%BD%95%E5%B0%86github%E7%AB%99%E7%82%B9%E5%B8%83%E7%BD%AE%E5%88%B0%E6%9C%AC%E5%9C%B0/</url>
+    <url>/2021/04/26/%E6%8A%80%E6%9C%AF/Hexo%E7%AB%99%E7%82%B9%E5%BB%BA%E8%AE%BE%E4%B9%8B%E2%80%94%E5%A6%82%E4%BD%95%E5%B0%86github%E7%AB%99%E7%82%B9%E5%B8%83%E7%BD%AE%E5%88%B0%E6%9C%AC%E5%9C%B0/</url>
     <content><![CDATA[<h2><span id="1-拷贝相关文件">1、拷贝相关文件</span></h2><p><em>可以将下列文件提交到git，从git拉代码</em></p>
 <p>必须拷贝文件：<br>├──_config.yml<br>├── themes # 主题模板<br>├── scaffolds #文章模板<br>├── package.json #说明使用哪些包<br>├── .gitignore #限定在提交的时候哪些文件可以忽略<br>└── source  </p>
 <p>（1）讨论下哪些文件是必须拷贝的：首先是之前自己修改的文件，像站点配置_config.yml，theme文件夹里面的主题，以及source里面自己写的博客文件，这些肯定要拷贝的。除此之外，还有三个文件需要有，就是scaffolds文件夹（文章的模板）、package.json（说明使用哪些包）和.gitignore（限定在提交的时候哪些文件可以忽略）。其实，这三个文件不是我们修改的，所以即使丢失了，也没有关系，我们可以建立一个新的文件夹，然后在里面执行hexo init，就会生成这三个文件，我们只需要将它们拷贝过来使用即可。总结：_config.yml，theme/，source/，scaffolds/，package.json，.gitignore，是需要拷贝的。</p>
@@ -118,7 +182,7 @@
   </entry>
   <entry>
     <title>Hexo站点建设之—如何将本地项目发布到github</title>
-    <url>/2021/04/26/%E6%8A%80%E6%9C%AF/Hexo/Hexo%E7%AB%99%E7%82%B9%E5%BB%BA%E8%AE%BE%E4%B9%8B%E2%80%94%E5%A6%82%E4%BD%95%E5%B0%86%E6%9C%AC%E5%9C%B0%E9%A1%B9%E7%9B%AE%E5%8F%91%E5%B8%83%E5%88%B0github/</url>
+    <url>/2021/04/26/%E6%8A%80%E6%9C%AF/Hexo%E7%AB%99%E7%82%B9%E5%BB%BA%E8%AE%BE%E4%B9%8B%E2%80%94%E5%A6%82%E4%BD%95%E5%B0%86%E6%9C%AC%E5%9C%B0%E9%A1%B9%E7%9B%AE%E5%8F%91%E5%B8%83%E5%88%B0github/</url>
     <content><![CDATA[]]></content>
       <categories>
         <category>技术</category>
@@ -130,7 +194,7 @@
   </entry>
   <entry>
     <title>Hexo站点建设之—快速一个搭建Hexo博客</title>
-    <url>/2021/04/26/%E6%8A%80%E6%9C%AF/Hexo/Hexo%E7%AB%99%E7%82%B9%E5%BB%BA%E8%AE%BE%E4%B9%8B%E2%80%94%E5%BF%AB%E9%80%9F%E4%B8%80%E4%B8%AA%E6%90%AD%E5%BB%BAHexo%E5%8D%9A%E5%AE%A2/</url>
+    <url>/2021/04/26/%E6%8A%80%E6%9C%AF/Hexo%E7%AB%99%E7%82%B9%E5%BB%BA%E8%AE%BE%E4%B9%8B%E2%80%94%E5%BF%AB%E9%80%9F%E4%B8%80%E4%B8%AA%E6%90%AD%E5%BB%BAHexo%E5%8D%9A%E5%AE%A2/</url>
     <content><![CDATA[]]></content>
       <categories>
         <category>技术</category>
@@ -138,8 +202,26 @@
       </categories>
   </entry>
   <entry>
+    <title>git常见问题记录</title>
+    <url>/2021/04/26/%E6%8A%80%E6%9C%AF/git%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/</url>
+    <content><![CDATA[<h3><span id="1-在-gitignore-文件中增加忽略文件不生效的解决办法">1、在 .gitignore 文件中增加忽略文件不生效的解决办法</span></h3><p>解决方法是先把本地缓存删除，然后重新加入再提交：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F; 从本地移除缓存</span><br><span class="line">git rm -rf --cached .</span><br><span class="line">&#x2F;&#x2F; 重新添加到本地</span><br><span class="line">git add .</span><br><span class="line">&#x2F;&#x2F; 提交到本地仓库</span><br><span class="line">git commit -m &#39;更新 .gitignore 文件&#39;</span><br></pre></td></tr></table></figure>
+
+<h3><span id="2-git报错解决openssl-ssl_read-connection-was-reset-errno-10054">2、Git报错解决：OpenSSL SSL_read: Connection was reset, errno 10054</span></h3><p>首先，造成这个错误很有可能是网络不稳定，连接超时导致的，<br>如果再次尝试后依然报错，可以执行下面的命令<br><code>git config --global http.sslVerify &quot;false&quot;</code></p>
+<h3><span id="3-warning-lf-will-be-replaced-by-crlf-in-解决办法">3、warning: LF will be replaced by CRLF in 解决办法</span></h3><p>在windows下面提交和linux提交的换行符不一样,windows中的换行符为 CRLF<br>而在linux下的换行符为LF，在windows下直接回车就会出现这个提示,修改的办法是把 core.autocrlf 设置成false</p>
+<p>解决办法：<br><code>git config --global core.autocrlf false</code></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+        <category>Git</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>如何优雅地使用 Stack Overflow？</title>
-    <url>/2021/04/29/%E6%8A%80%E6%9C%AF/%E6%9C%AA%E5%88%86%E7%B1%BB/%E5%A6%82%E4%BD%95%E4%BC%98%E9%9B%85%E5%9C%B0%E4%BD%BF%E7%94%A8-Stack-Overflow%EF%BC%9F/</url>
+    <url>/2021/04/29/%E6%8A%80%E6%9C%AF/%E5%A6%82%E4%BD%95%E4%BC%98%E9%9B%85%E5%9C%B0%E4%BD%BF%E7%94%A8-Stack-Overflow%EF%BC%9F/</url>
     <content><![CDATA[<p>一，提问前一定要搜索，先在 Google 搜索，然后在 StackOverFlow 上搜索，当实在找不到答案后再提问。    </p>
 <p>二，学习一些典型的提问/回答习惯。</p>
 <p><strong>提问：</strong></p>
@@ -166,7 +248,7 @@
   </entry>
   <entry>
     <title>技术文章收藏</title>
-    <url>/2021/04/28/%E6%8A%80%E6%9C%AF/%E6%9C%AA%E5%88%86%E7%B1%BB/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0%E6%94%B6%E8%97%8F/</url>
+    <url>/2021/04/28/%E6%8A%80%E6%9C%AF/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0%E6%94%B6%E8%97%8F/</url>
     <content><![CDATA[<p><a href="https://www.cnblogs.com/jianguo221/p/11487532.html">windows安装npm和vue教程</a></p>
 ]]></content>
       <categories>

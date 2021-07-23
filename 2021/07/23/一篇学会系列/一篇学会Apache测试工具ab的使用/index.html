@@ -13,7 +13,7 @@
         name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=1"
       />
-      <title> Joker Blog</title>
+      <title>一篇学会Apache测试工具ab的使用 |  Joker Blog</title>
   <meta name="generator" content="hexo-theme-ayer">
       
       <link rel="shortcut icon" href="/favicon.ico" />
@@ -44,109 +44,8 @@
     
       
     <main class="content on">
-      
-<section class="cover">
-    
-      
-      <a class="forkMe" href="https://github.com/joker100000"
-        target="_blank"><img width="149" height="149" src="/images/forkme.png"
-          class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1"></a>
-    
-  <div class="cover-frame">
-    <div class="bg-box">
-      <img src="/images/cover4.jpg" alt="image frame" />
-    </div>
-    <div class="cover-inner text-center text-white">
-      <h1><a href="/">Joker Blog</a></h1>
-      <div id="subtitle-box">
-        
-        <span id="subtitle"></span>
-        
-      </div>
-      <div>
-        
-      </div>
-    </div>
-  </div>
-  <div class="cover-learn-more">
-    <a href="javascript:void(0)" class="anchor"><i class="ri-arrow-down-line"></i></a>
-  </div>
-</section>
-
-
-
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js"></script>
-
-
-<!-- Subtitle -->
-
-  <script>
-    try {
-      var typed = new Typed("#subtitle", {
-        strings: ['面朝大海，春暖花开', '愿你一生努力，一生被爱', '想要的都拥有，得不到的都释怀'],
-        startDelay: 0,
-        typeSpeed: 200,
-        loop: true,
-        backSpeed: 100,
-        showCursor: true
-      });
-    } catch (err) {
-      console.log(err)
-    }
-  </script>
-  
-<div id="main">
-  <section class="outer">
-  
-  
-  
-
-<div class="notice" style="margin-top:50px">
-    <i class="ri-heart-fill"></i>
-    <div class="notice-content" id="broad"></div>
-</div>
-<script type="text/javascript">
-    fetch('https://v1.hitokoto.cn')
-        .then(response => response.json())
-        .then(data => {
-            document.getElementById("broad").innerHTML = data.hitokoto;
-        })
-        .catch(console.error)
-</script>
-
-<style>
-    .notice {
-        padding: 20px;
-        border: 1px dashed #e6e6e6;
-        color: #969696;
-        position: relative;
-        display: inline-block;
-        width: 100%;
-        background: #fbfbfb50;
-        border-radius: 10px;
-    }
-
-    .notice i {
-        float: left;
-        color: #999;
-        font-size: 16px;
-        padding-right: 10px;
-        vertical-align: middle;
-        margin-top: -2px;
-    }
-
-    .notice-content {
-        display: initial;
-        vertical-align: middle;
-    }
-</style>
-  
-  <article class="articles">
-    
-    
-    
-    
-    <article
+      <section class="outer">
+  <article
   id="post-一篇学会系列/一篇学会Apache测试工具ab的使用"
   class="article article-type-post"
   itemscope
@@ -157,10 +56,9 @@
     
     <header class="article-header">
        
-<h2 itemprop="name">
-  <a class="article-title" href="/2021/07/23/%E4%B8%80%E7%AF%87%E5%AD%A6%E4%BC%9A%E7%B3%BB%E5%88%97/%E4%B8%80%E7%AF%87%E5%AD%A6%E4%BC%9AApache%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7ab%E7%9A%84%E4%BD%BF%E7%94%A8/"
-    >一篇学会Apache测试工具ab的使用</a> 
-</h2>
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  一篇学会Apache测试工具ab的使用
+</h1>
  
 
       
@@ -169,9 +67,34 @@
     <div class="article-meta">
       <a href="/2021/07/23/%E4%B8%80%E7%AF%87%E5%AD%A6%E4%BC%9A%E7%B3%BB%E5%88%97/%E4%B8%80%E7%AF%87%E5%AD%A6%E4%BC%9AApache%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7ab%E7%9A%84%E4%BD%BF%E7%94%A8/" class="article-date">
   <time datetime="2021-07-23T07:47:18.000Z" itemprop="datePublished">2021-07-23</time>
-</a>    
+</a>   
+<div class="word_count">
+    <span class="post-time">
+        <span class="post-meta-item-icon">
+            <i class="ri-quill-pen-line"></i>
+            <span class="post-meta-item-text"> 字数统计:</span>
+            <span class="post-count">3.2k</span>
+        </span>
+    </span>
+
+    <span class="post-time">
+        &nbsp; | &nbsp;
+        <span class="post-meta-item-icon">
+            <i class="ri-book-open-line"></i>
+            <span class="post-meta-item-text"> 阅读时长≈</span>
+            <span class="post-count">13 分钟</span>
+        </span>
+    </span>
+</div>
+ 
     </div>
       
+    <div class="tocbot"></div>
+
+
+
+
+  
     <div class="article-entry" itemprop="articleBody">
        
   <h2><span id="为什么要做压测">为什么要做压测</span></h2><p>做为一名合格的后端工程师，在实现业务的同时，也要学会使用压测工具自己进行测试。现在大多数公司都采用前后端分离的方式，那么自己写的接口运行速度如何，QPS能达到多少，加入大并发的情况下，是否会出现因为并发导致的数据不一致问题，这是必须考虑的问题。</p>
@@ -259,541 +182,135 @@
 
     <!-- copyright -->
     
-    <footer class="article-footer">
-       
-    </footer>
-  </div>
-
-    
- 
-    
-</article>
-
-    
-    <article
-  id="post-开发中常用英文单词"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2021/05/24/%E5%BC%80%E5%8F%91%E4%B8%AD%E5%B8%B8%E7%94%A8%E8%8B%B1%E6%96%87%E5%8D%95%E8%AF%8D/"
-    >开发中常用英文单词</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/2021/05/24/%E5%BC%80%E5%8F%91%E4%B8%AD%E5%B8%B8%E7%94%A8%E8%8B%B1%E6%96%87%E5%8D%95%E8%AF%8D/" class="article-date">
-  <time datetime="2021-05-24T02:14:58.000Z" itemprop="datePublished">2021-05-24</time>
-</a>    
+    <div class="declare">
+      <ul class="post-copyright">
+        <li>
+          <i class="ri-copyright-line"></i>
+          <strong>版权声明： </strong>
+          
+          本博客所有文章除特别声明外，著作权归作者所有。转载请注明出处！
+          
+        </li>
+      </ul>
     </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <h1><span id="商城">商城</span></h1><p>invoice    发票<br>tax    税<br>product/goods 商品<br>shop/store 店铺</p>
-<h1><span id="文章">文章</span></h1><h1><span id="用户">用户</span></h1><p>mobile 手机<br>email  邮箱   uuuuuuuuuuuuuuu</p>
-<h1><span id="公共">公共</span></h1><p>name   名称（姓名/公司名/商品名等）<br>status 状态 1-启用，0-未启用<br>type   类型 0-全部，1-类型A，类型B<br>创建时间<br>更新时间<br>是否删除  is_del 0-正常，1-删除</p>
- 
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
     
     <footer class="article-footer">
        
-    </footer>
-  </div>
-
-    
- 
-    
-</article>
-
-    
-    <article
-  id="post-技术/如何优雅地使用-Stack-Overflow？"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2021/04/29/%E6%8A%80%E6%9C%AF/%E5%A6%82%E4%BD%95%E4%BC%98%E9%9B%85%E5%9C%B0%E4%BD%BF%E7%94%A8-Stack-Overflow%EF%BC%9F/"
-    >如何优雅地使用 Stack Overflow？</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/2021/04/29/%E6%8A%80%E6%9C%AF/%E5%A6%82%E4%BD%95%E4%BC%98%E9%9B%85%E5%9C%B0%E4%BD%BF%E7%94%A8-Stack-Overflow%EF%BC%9F/" class="article-date">
-  <time datetime="2021-04-29T06:50:48.000Z" itemprop="datePublished">2021-04-29</time>
-</a> 
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a> / <a class="article-category-link" href="/categories/%E6%8A%80%E6%9C%AF/%E6%9C%AA%E5%88%86%E7%B1%BB/">未分类</a>
-  </div>
-   
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <p>一，提问前一定要搜索，先在 Google 搜索，然后在 StackOverFlow 上搜索，当实在找不到答案后再提问。    </p>
-<p>二，学习一些典型的提问/回答习惯。</p>
-<p><strong>提问：</strong></p>
-<p>1，In my limited experience with ..    谦虚表达自己在某方面的经验</p>
-<p>2，I am searching for a long time on net. But no use. Please help or try to give some ideas how to achieve this.   找了很久未果，求助攻</p>
-<p>3，after searching around for a decent XX solution and found that everything out there was difficult to use.  找了N种方法都发现太TM难了。</p>
-<p>4，I’ve looked around and apparently I’ve got the choice between these libraries/ solutions:   说明自己是努力搜索过的，然后目前有了哪几种方案</p>
-<p>5，which seems it’s a promising solution.  看起来是一个好解决方案</p>
-<p>6，I’ve tried multiple variations of this, but none of them seem to work. Any ideas? 试了很多种方法都无效，求助</p>
-<p>7，Wanted to know if it’s good practice to do that and what would be the best way to do that? 我的做法是否正确，是否有更好的法子？</p>
-<p>8，Thanks in advance.   先行谢过</p>
-<p><strong>回答问题：</strong></p>
-<p>1，If I understand you correctly, you want to xxx      如果我没理解错，你想。。</p>
-<p>2，Can you provided more details about your use case ? Can you provide more xml and code setting the url ? 提供更详细</p>
-<hr>
-<p>当别人回答你的问题后，你对回答的评论：</p>
-<p>1，thank you for your answer sincerely 感谢回答</p>
-<p>最后附上一篇好文：<a target="_blank" rel="noopener" href="https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md">《提问的智慧》</a></p>
- 
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-    </footer>
-  </div>
-
-    
- 
-    
-</article>
-
-    
-    <article
-  id="post-标签大全"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2021/04/29/%E6%A0%87%E7%AD%BE%E5%A4%A7%E5%85%A8/"
-    >标签大全</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/2021/04/29/%E6%A0%87%E7%AD%BE%E5%A4%A7%E5%85%A8/" class="article-date">
-  <time datetime="2021-04-29T01:40:34.000Z" itemprop="datePublished">2021-04-29</time>
-</a>    
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-   
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Composer/" rel="tag">Composer</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Docker/" rel="tag">Docker</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Git/" rel="tag">Git</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Kafka/" rel="tag">Kafka</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Linux/" rel="tag">Linux</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Mac/" rel="tag">Mac</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Mysql/" rel="tag">Mysql</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PHP/" rel="tag">PHP</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PostMan/" rel="tag">PostMan</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Redis/" rel="tag">Redis</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Vant/" rel="tag">Vant</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Vue/" rel="tag">Vue</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Windows/" rel="tag">Windows</a></li></ul>
-
-    </footer>
-  </div>
-
-    
- 
-    
-</article>
-
-    
-    <article
-  id="post-技术/技术文章收藏"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2021/04/28/%E6%8A%80%E6%9C%AF/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0%E6%94%B6%E8%97%8F/"
-    >技术文章收藏</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/2021/04/28/%E6%8A%80%E6%9C%AF/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0%E6%94%B6%E8%97%8F/" class="article-date">
-  <time datetime="2021-04-28T09:39:04.000Z" itemprop="datePublished">2021-04-28</time>
-</a> 
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a> / <a class="article-category-link" href="/categories/%E6%8A%80%E6%9C%AF/%E6%9C%AA%E5%88%86%E7%B1%BB/">未分类</a>
-  </div>
-   
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/jianguo221/p/11487532.html">windows安装npm和vue教程</a></p>
- 
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-    </footer>
-  </div>
-
-    
- 
-    
-</article>
-
-    
-    <article
-  id="post-技术/Hexo站点建设之—快速一个搭建Hexo博客"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2021/04/26/%E6%8A%80%E6%9C%AF/Hexo%E7%AB%99%E7%82%B9%E5%BB%BA%E8%AE%BE%E4%B9%8B%E2%80%94%E5%BF%AB%E9%80%9F%E4%B8%80%E4%B8%AA%E6%90%AD%E5%BB%BAHexo%E5%8D%9A%E5%AE%A2/"
-    >Hexo站点建设之—快速一个搭建Hexo博客</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/2021/04/26/%E6%8A%80%E6%9C%AF/Hexo%E7%AB%99%E7%82%B9%E5%BB%BA%E8%AE%BE%E4%B9%8B%E2%80%94%E5%BF%AB%E9%80%9F%E4%B8%80%E4%B8%AA%E6%90%AD%E5%BB%BAHexo%E5%8D%9A%E5%AE%A2/" class="article-date">
-  <time datetime="2021-04-26T09:16:49.000Z" itemprop="datePublished">2021-04-26</time>
-</a> 
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a> / <a class="article-category-link" href="/categories/%E6%8A%80%E6%9C%AF/Hexo/">Hexo</a>
-  </div>
-   
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-   
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-    </footer>
-  </div>
-
-    
- 
-    
-</article>
-
-    
-    <article
-  id="post-技术/Hexo站点建设之—如何将github站点布置到本地"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2021/04/26/%E6%8A%80%E6%9C%AF/Hexo%E7%AB%99%E7%82%B9%E5%BB%BA%E8%AE%BE%E4%B9%8B%E2%80%94%E5%A6%82%E4%BD%95%E5%B0%86github%E7%AB%99%E7%82%B9%E5%B8%83%E7%BD%AE%E5%88%B0%E6%9C%AC%E5%9C%B0/"
-    >Hexo站点建设之—如何将github站点布置到本地</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/2021/04/26/%E6%8A%80%E6%9C%AF/Hexo%E7%AB%99%E7%82%B9%E5%BB%BA%E8%AE%BE%E4%B9%8B%E2%80%94%E5%A6%82%E4%BD%95%E5%B0%86github%E7%AB%99%E7%82%B9%E5%B8%83%E7%BD%AE%E5%88%B0%E6%9C%AC%E5%9C%B0/" class="article-date">
-  <time datetime="2021-04-26T08:49:59.000Z" itemprop="datePublished">2021-04-26</time>
-</a> 
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a> / <a class="article-category-link" href="/categories/%E6%8A%80%E6%9C%AF/Hexo/">Hexo</a>
-  </div>
-   
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <h2><span id="1-拷贝相关文件">1、拷贝相关文件</span></h2><p><em>可以将下列文件提交到git，从git拉代码</em></p>
-<p>必须拷贝文件：<br>├──_config.yml<br>├── themes # 主题模板<br>├── scaffolds #文章模板<br>├── package.json #说明使用哪些包<br>├── .gitignore #限定在提交的时候哪些文件可以忽略<br>└── source  </p>
-<p>（1）讨论下哪些文件是必须拷贝的：首先是之前自己修改的文件，像站点配置_config.yml，theme文件夹里面的主题，以及source里面自己写的博客文件，这些肯定要拷贝的。除此之外，还有三个文件需要有，就是scaffolds文件夹（文章的模板）、package.json（说明使用哪些包）和.gitignore（限定在提交的时候哪些文件可以忽略）。其实，这三个文件不是我们修改的，所以即使丢失了，也没有关系，我们可以建立一个新的文件夹，然后在里面执行hexo init，就会生成这三个文件，我们只需要将它们拷贝过来使用即可。总结：_config.yml，theme/，source/，scaffolds/，package.json，.gitignore，是需要拷贝的。</p>
-<p>（2）再讨论下哪些文件是不必拷贝的，或者说可以删除的：首先是.git文件，无论是在站点根目录下，还是主题目录下的.git文件，都可以删掉。然后是文件夹node_modules（在用npm install会重新生成），public（这个在用hexo g时会重新生成），.deploy_git文件夹（在使用hexo d时也会重新生成），db.json文件。其实上面这些文件也就是是.gitignore文件里面记载的可以忽略的内容。总结：.git/，node_modules/，public/，.deploy_git/，db.json文件需要删除。</p>
-<h2><span id="2-安装模块">2、安装模块</span></h2><p>执行命令 <code>npm install</code><br>安装完会生成 <code>node_modules</code>文件夹  </p>
-<h2><span id="3-生成文件并发布">3、生成文件并发布</span></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo clean  </span><br><span class="line">hexo deploy  </span><br></pre></td></tr></table></figure>
-
-<p>引用参考<br><code>https://www.jianshu.com/p/906294181814</code><br><code>https://blog.csdn.net/qq_34187711/article/details/88592760</code></p>
- 
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li></ul>
-
-    </footer>
-  </div>
-
-    
- 
-    
-</article>
-
-    
-    <article
-  id="post-技术/Hexo站点建设之—如何将本地项目发布到github"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2021/04/26/%E6%8A%80%E6%9C%AF/Hexo%E7%AB%99%E7%82%B9%E5%BB%BA%E8%AE%BE%E4%B9%8B%E2%80%94%E5%A6%82%E4%BD%95%E5%B0%86%E6%9C%AC%E5%9C%B0%E9%A1%B9%E7%9B%AE%E5%8F%91%E5%B8%83%E5%88%B0github/"
-    >Hexo站点建设之—如何将本地项目发布到github</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/2021/04/26/%E6%8A%80%E6%9C%AF/Hexo%E7%AB%99%E7%82%B9%E5%BB%BA%E8%AE%BE%E4%B9%8B%E2%80%94%E5%A6%82%E4%BD%95%E5%B0%86%E6%9C%AC%E5%9C%B0%E9%A1%B9%E7%9B%AE%E5%8F%91%E5%B8%83%E5%88%B0github/" class="article-date">
-  <time datetime="2021-04-26T08:49:04.000Z" itemprop="datePublished">2021-04-26</time>
-</a> 
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a> / <a class="article-category-link" href="/categories/%E6%8A%80%E6%9C%AF/Hexo/">Hexo</a>
-  </div>
-   
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-   
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li></ul>
-
-    </footer>
-  </div>
-
-    
- 
-    
-</article>
-
-    
-    <article
-  id="post-技术/Hexo站点建设之——WARN-No-layout-index-html"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2021/04/26/%E6%8A%80%E6%9C%AF/Hexo%E7%AB%99%E7%82%B9%E5%BB%BA%E8%AE%BE%E4%B9%8B%E2%80%94%E2%80%94WARN-No-layout-index-html/"
-    >Hexo站点建设之——WARN-No-layout-index-html</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/2021/04/26/%E6%8A%80%E6%9C%AF/Hexo%E7%AB%99%E7%82%B9%E5%BB%BA%E8%AE%BE%E4%B9%8B%E2%80%94%E2%80%94WARN-No-layout-index-html/" class="article-date">
-  <time datetime="2021-04-26T08:03:34.000Z" itemprop="datePublished">2021-04-26</time>
-</a> 
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a> / <a class="article-category-link" href="/categories/%E6%8A%80%E6%9C%AF/Hexo/">Hexo</a>
-  </div>
-   
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <h2><span id="一-现象描述">一 现象描述</span></h2><hr>
-<p>执行hexo g或hexo s时，可能会出现如下情况，<br><img src="https://img.imgdb.cn/item/60867779d1a9ae528fbb7107.png"></p>
-<h2><span id="二-原因猜测">二 原因猜测</span></h2><hr>
-<ul>
-<li>插件</li>
-<li>主题</li>
-<li>markdown文件</li>
-</ul>
-<h2><span id="三-解决办法">三 解决办法</span></h2><hr>
-<h3><span id="31-插件">3.1 插件</span></h3><h4><span id="311-查看npm安装hexo插件的情况">3.1.1 查看npm安装hexo插件的情况</span></h4><p><code>npm ls --depth 0</code><br><img src="https://img.imgdb.cn/item/60867779d1a9ae528fbb711e.png"></p>
-<h4><span id="312-安装缺失的插件">3.1.2 安装缺失的插件</span></h4><p><code>npm install acorn --save</code><br><img src="https://img.imgdb.cn/item/60867779d1a9ae528fbb70e2.png"></p>
-<h4><span id="313-再次执行-npm-ls-depth-0查看插件安装情况">3.1.3 再次执行 npm ls –depth 0查看插件安装情况</span></h4><h3><span id="32-主题themes">3.2 主题(themes)</span></h3><hr>
-<h4><span id="321-检查themes下的主题和配置">3.2.1 检查themes下的主题和配置</span></h4><p><img src="https://img.imgdb.cn/item/60867779d1a9ae528fbb7158.png"></p>
-<h4><span id="322-下载最新主题并配置_configyml">3.2.2 下载最新主题并配置_config.yml</span></h4><p><code>git clone https://github.com/theme-next/hexo-theme-next themes/next </code><br><img src="https://img.imgdb.cn/item/60867779d1a9ae528fbb7144.png"></p>
-<h4><span id="323-执行hexo-g查看执行情况文件能正常生成">3.2.3 执行hexo g查看执行情况(文件能正常生成)</span></h4><p><img src="https://img.imgdb.cn/item/60867779d1a9ae528fbb7158.png"></p>
- 
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li></ul>
-
-    </footer>
-  </div>
-
-    
- 
-    
-</article>
-
-    
-    <article
-  id="post-技术/git常见问题记录"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2021/04/26/%E6%8A%80%E6%9C%AF/git%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/"
-    >git常见问题记录</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/2021/04/26/%E6%8A%80%E6%9C%AF/git%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/" class="article-date">
-  <time datetime="2021-04-26T07:17:03.000Z" itemprop="datePublished">2021-04-26</time>
-</a> 
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a> / <a class="article-category-link" href="/categories/%E6%8A%80%E6%9C%AF/Git/">Git</a>
-  </div>
-   
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <h3><span id="1-在-gitignore-文件中增加忽略文件不生效的解决办法">1、在 .gitignore 文件中增加忽略文件不生效的解决办法</span></h3><p>解决方法是先把本地缓存删除，然后重新加入再提交：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 从本地移除缓存</span><br><span class="line">git rm -rf --cached .</span><br><span class="line">&#x2F;&#x2F; 重新添加到本地</span><br><span class="line">git add .</span><br><span class="line">&#x2F;&#x2F; 提交到本地仓库</span><br><span class="line">git commit -m &#39;更新 .gitignore 文件&#39;</span><br></pre></td></tr></table></figure>
-
-<h3><span id="2-git报错解决openssl-ssl_read-connection-was-reset-errno-10054">2、Git报错解决：OpenSSL SSL_read: Connection was reset, errno 10054</span></h3><p>首先，造成这个错误很有可能是网络不稳定，连接超时导致的，<br>如果再次尝试后依然报错，可以执行下面的命令<br><code>git config --global http.sslVerify &quot;false&quot;</code></p>
-<h3><span id="3-warning-lf-will-be-replaced-by-crlf-in-解决办法">3、warning: LF will be replaced by CRLF in 解决办法</span></h3><p>在windows下面提交和linux提交的换行符不一样,windows中的换行符为 CRLF<br>而在linux下的换行符为LF，在windows下直接回车就会出现这个提示,修改的办法是把 core.autocrlf 设置成false</p>
-<p>解决办法：<br><code>git config --global core.autocrlf false</code></p>
- 
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/" rel="tag">git</a></li></ul>
-
-    </footer>
-  </div>
-
-    
- 
-    
-</article>
-
-    
-  </article>
-  
-
-  
-  <nav class="page-nav">
-    
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">下一页</a>
-  </nav>
-  
-</section>
+<div class="share-btn">
+      <span class="share-sns share-outer">
+        <i class="ri-share-forward-line"></i>
+        分享
+      </span>
+      <div class="share-wrap">
+        <i class="arrow"></i>
+        <div class="share-icons">
+          
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="ri-weibo-fill"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="ri-wechat-fill"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="ri-qq-fill"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="ri-douban-line"></i>
+          </a>
+          <!-- <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a> -->
+          
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="ri-facebook-circle-fill"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="ri-twitter-fill"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="ri-google-fill"></i>
+          </a>
+        </div>
+      </div>
 </div>
 
+<div class="wx-share-modal">
+    <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://blog.joker10000.cn/2021/07/23/%E4%B8%80%E7%AF%87%E5%AD%A6%E4%BC%9A%E7%B3%BB%E5%88%97/%E4%B8%80%E7%AF%87%E5%AD%A6%E4%BC%9AApache%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7ab%E7%9A%84%E4%BD%BF%E7%94%A8/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div id="share-mask"></div>  
+    </footer>
+  </div>
+
+   
+  <nav class="article-nav">
+    
+    
+      <a href="/2021/05/24/%E5%BC%80%E5%8F%91%E4%B8%AD%E5%B8%B8%E7%94%A8%E8%8B%B1%E6%96%87%E5%8D%95%E8%AF%8D/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">开发中常用英文单词</div>
+      </a>
+    
+  </nav>
+
+   
+<!-- valine评论 -->
+<div id="vcomments-box">
+  <div id="vcomments"></div>
+</div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js"></script>
+<script>
+  new Valine({
+    el: "#vcomments",
+    app_id: "1ar0kcyeaao0PuzN4OXGKDHq-gzGzoHsz",
+    app_key: "q5JuofBTMtHGOqfa03ObRmHF",
+    path: window.location.pathname,
+    avatar: "monsterid",
+    placeholder: "给我的文章加点评论吧~",
+    recordIP: true,
+  });
+  const infoEle = document.querySelector("#vcomments .info");
+  if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
+    infoEle.childNodes.forEach(function (item) {
+      item.parentNode.removeChild(item);
+    });
+  }
+</script>
+<style>
+  #vcomments-box {
+    padding: 5px 30px;
+  }
+
+  @media screen and (max-width: 800px) {
+    #vcomments-box {
+      padding: 5px 0px;
+    }
+  }
+
+  #vcomments-box #vcomments {
+    background-color: #fff;
+  }
+
+  .v .vlist .vcard .vh {
+    padding-right: 20px;
+  }
+
+  .v .vlist .vcard {
+    padding-left: 10px;
+  }
+</style>
+
+ 
+   
+     
+</article>
+
+</section>
       <footer class="footer">
   <div class="outer">
     <ul>
@@ -929,6 +446,22 @@
 <script src="/js/lazyload.min.js"></script>
 
 <!-- Tocbot -->
+ 
+<script src="/js/tocbot.min.js"></script>
+
+<script>
+  tocbot.init({
+    tocSelector: ".tocbot",
+    contentSelector: ".article-entry",
+    headingSelector: "h1, h2, h3, h4, h5, h6",
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    scrollContainer: "main",
+    positionFixedSelector: ".tocbot",
+    positionFixedClass: "is-position-fixed",
+    fixedSidebarOffset: "auto",
+  });
+</script>
 
 <script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
 <link

@@ -13,7 +13,7 @@
         name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=1"
       />
-      <title>技术文章收藏 |  Joker Blog</title>
+      <title>Hexo站点建设之—如何将github站点布置到本地 |  Joker Blog</title>
   <meta name="generator" content="hexo-theme-ayer">
       
       <link rel="shortcut icon" href="/favicon.ico" />
@@ -46,7 +46,7 @@
     <main class="content on">
       <section class="outer">
   <article
-  id="post-技术/未分类/技术文章收藏"
+  id="post-技术/Hexo站点建设之—如何将github站点布置到本地"
   class="article article-type-post"
   itemscope
   itemprop="blogPost"
@@ -57,7 +57,7 @@
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  技术文章收藏
+  Hexo站点建设之—如何将github站点布置到本地
 </h1>
  
 
@@ -65,11 +65,11 @@
     </header>
      
     <div class="article-meta">
-      <a href="/2021/04/28/%E6%8A%80%E6%9C%AF/%E6%9C%AA%E5%88%86%E7%B1%BB/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0%E6%94%B6%E8%97%8F/" class="article-date">
-  <time datetime="2021-04-28T09:39:04.000Z" itemprop="datePublished">2021-04-28</time>
+      <a href="/2021/04/26/%E6%8A%80%E6%9C%AF/Hexo%E7%AB%99%E7%82%B9%E5%BB%BA%E8%AE%BE%E4%B9%8B%E2%80%94%E5%A6%82%E4%BD%95%E5%B0%86github%E7%AB%99%E7%82%B9%E5%B8%83%E7%BD%AE%E5%88%B0%E6%9C%AC%E5%9C%B0/" class="article-date">
+  <time datetime="2021-04-26T08:49:59.000Z" itemprop="datePublished">2021-04-26</time>
 </a> 
   <div class="article-category">
-    <a class="article-category-link" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a> / <a class="article-category-link" href="/categories/%E6%8A%80%E6%9C%AF/%E6%9C%AA%E5%88%86%E7%B1%BB/">未分类</a>
+    <a class="article-category-link" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a> / <a class="article-category-link" href="/categories/%E6%8A%80%E6%9C%AF/Hexo/">Hexo</a>
   </div>
   
 <div class="word_count">
@@ -77,7 +77,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">6</span>
+            <span class="post-count">466</span>
         </span>
     </span>
 
@@ -93,13 +93,22 @@
  
     </div>
       
+    <div class="tocbot"></div>
+
 
 
 
   
     <div class="article-entry" itemprop="articleBody">
        
-  <p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/jianguo221/p/11487532.html">windows安装npm和vue教程</a></p>
+  <h2><span id="1-拷贝相关文件">1、拷贝相关文件</span></h2><p><em>可以将下列文件提交到git，从git拉代码</em></p>
+<p>必须拷贝文件：<br>├──_config.yml<br>├── themes # 主题模板<br>├── scaffolds #文章模板<br>├── package.json #说明使用哪些包<br>├── .gitignore #限定在提交的时候哪些文件可以忽略<br>└── source  </p>
+<p>（1）讨论下哪些文件是必须拷贝的：首先是之前自己修改的文件，像站点配置_config.yml，theme文件夹里面的主题，以及source里面自己写的博客文件，这些肯定要拷贝的。除此之外，还有三个文件需要有，就是scaffolds文件夹（文章的模板）、package.json（说明使用哪些包）和.gitignore（限定在提交的时候哪些文件可以忽略）。其实，这三个文件不是我们修改的，所以即使丢失了，也没有关系，我们可以建立一个新的文件夹，然后在里面执行hexo init，就会生成这三个文件，我们只需要将它们拷贝过来使用即可。总结：_config.yml，theme/，source/，scaffolds/，package.json，.gitignore，是需要拷贝的。</p>
+<p>（2）再讨论下哪些文件是不必拷贝的，或者说可以删除的：首先是.git文件，无论是在站点根目录下，还是主题目录下的.git文件，都可以删掉。然后是文件夹node_modules（在用npm install会重新生成），public（这个在用hexo g时会重新生成），.deploy_git文件夹（在使用hexo d时也会重新生成），db.json文件。其实上面这些文件也就是是.gitignore文件里面记载的可以忽略的内容。总结：.git/，node_modules/，public/，.deploy_git/，db.json文件需要删除。</p>
+<h2><span id="2-安装模块">2、安装模块</span></h2><p>执行命令 <code>npm install</code><br>安装完会生成 <code>node_modules</code>文件夹  </p>
+<h2><span id="3-生成文件并发布">3、生成文件并发布</span></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo clean  </span><br><span class="line">hexo deploy  </span><br></pre></td></tr></table></figure>
+
+<p>引用参考<br><code>https://www.jianshu.com/p/906294181814</code><br><code>https://blog.csdn.net/qq_34187711/article/details/88592760</code></p>
  
       <!-- reward -->
       
@@ -164,30 +173,32 @@
     <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://blog.joker10000.cn/2021/04/28/%E6%8A%80%E6%9C%AF/%E6%9C%AA%E5%88%86%E7%B1%BB/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0%E6%94%B6%E8%97%8F/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://blog.joker10000.cn/2021/04/26/%E6%8A%80%E6%9C%AF/Hexo%E7%AB%99%E7%82%B9%E5%BB%BA%E8%AE%BE%E4%B9%8B%E2%80%94%E5%A6%82%E4%BD%95%E5%B0%86github%E7%AB%99%E7%82%B9%E5%B8%83%E7%BD%AE%E5%88%B0%E6%9C%AC%E5%9C%B0/" alt="微信分享二维码">
     </div>
 </div>
 
 <div id="share-mask"></div>  
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li></ul>
+
     </footer>
   </div>
 
    
   <nav class="article-nav">
     
-      <a href="/2021/04/29/%E6%A0%87%E7%AD%BE%E5%A4%A7%E5%85%A8/" class="article-nav-link">
+      <a href="/2021/04/26/%E6%8A%80%E6%9C%AF/Hexo%E7%AB%99%E7%82%B9%E5%BB%BA%E8%AE%BE%E4%B9%8B%E2%80%94%E5%BF%AB%E9%80%9F%E4%B8%80%E4%B8%AA%E6%90%AD%E5%BB%BAHexo%E5%8D%9A%E5%AE%A2/" class="article-nav-link">
         <strong class="article-nav-caption">上一篇</strong>
         <div class="article-nav-title">
           
-            标签大全
+            Hexo站点建设之—快速一个搭建Hexo博客
           
         </div>
       </a>
     
     
-      <a href="/2021/04/26/%E6%8A%80%E6%9C%AF/Hexo/Hexo%E7%AB%99%E7%82%B9%E5%BB%BA%E8%AE%BE%E4%B9%8B%E2%80%94%E5%BF%AB%E9%80%9F%E4%B8%80%E4%B8%AA%E6%90%AD%E5%BB%BAHexo%E5%8D%9A%E5%AE%A2/" class="article-nav-link">
+      <a href="/2021/04/26/%E6%8A%80%E6%9C%AF/Hexo%E7%AB%99%E7%82%B9%E5%BB%BA%E8%AE%BE%E4%B9%8B%E2%80%94%E5%A6%82%E4%BD%95%E5%B0%86%E6%9C%AC%E5%9C%B0%E9%A1%B9%E7%9B%AE%E5%8F%91%E5%B8%83%E5%88%B0github/" class="article-nav-link">
         <strong class="article-nav-caption">下一篇</strong>
-        <div class="article-nav-title">Hexo站点建设之—快速一个搭建Hexo博客</div>
+        <div class="article-nav-title">Hexo站点建设之—如何将本地项目发布到github</div>
       </a>
     
   </nav>
